@@ -1,0 +1,37 @@
+@import "norm.scss";
+.black {
+  color: black
+}
+#float5 {
+  background: url('../src/image/office.png') no-repeat;
+  width: 1000px;
+  height: 500px;
+  display: block;
+}
+polygon {
+  cursor: pointer;
+}
+#map {
+  background: #F1F6F6;
+}
+.controls {
+  position: absolute;
+  top:0;
+  left: 0;
+  margin: 10px 20px;
+  &__zoom {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    background: #838F9A;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px 10px;
+    cursor: pointer;
+    &:hover {
+      background: #272A2C;
+    }
+  }
+}
