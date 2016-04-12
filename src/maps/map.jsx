@@ -1,135 +1,50 @@
 var React = require('react');
-var Float5 = require('./float5');
+var Float5 = require('./floats/float5');
 var Zoom = require('./zoom');
-var ActionZoom = require('./actions/zoom');
+var Controls = require('./controls');
 var Config = require('.././config');
+var Search = require('./search');
 
 module.exports = React.createClass({
-  getInitialState:  function() {
+  getDefaultProps:  function() {
       return {
         transX: 0,
         transY: 0,
-        scale: 1,
-        zoomStep: 1,
-        zoomMaxStep: 4,
-        zoomCurStep: 1,
+        scale: 1
       }
   },
-  // applyTransform: function () {
-  //   console.log(this);
-  // var maxTransX, maxTransY, minTransX, minTransY;
-  // if (this.defaultWidth * this.scale <= this.width) {
-  //   maxTransX = (this.width - this.defaultWidth * this.scale) / (2 * this.scale);
-  //   minTransX = (this.width - this.defaultWidth * this.scale) / (2 * this.scale);
-  // } else {
-  //   maxTransX = 0;
-  //   minTransX = (this.width - this.defaultWidth * this.scale) / this.scale;
-  // }
-  //
-  // if (this.defaultHeight * this.scale <= this.height) {
-  //   maxTransY = (this.height - this.defaultHeight * this.scale) / (2 * this.scale);
-  //   minTransY = (this.height - this.defaultHeight * this.scale) / (2 * this.scale);
-  // } else {
-  //   maxTransY = 0;
-  //   minTransY = (this.height - this.defaultHeight * this.scale) / this.scale;
-  // }
-  //
-  // if (this.transY > maxTransY) {
-  //   this.transY = maxTransY;
-  // } else if (this.transY < minTransY) {
-  //   this.transY = minTransY;
-  // }
-  // if (this.transX > maxTransX) {
-  //   this.transX = maxTransX;
-  // } else if (this.transX < minTransX) {
-  //   this.transX = minTransX;
-  // }
-  //
-  // },
-  // mouseMove: function() {
-  //   var mouseDown = false;
-  //   var oldPageX, oldPageY;
-  //   var self = this.state;
-  //   var states = this;
-  //   self.isMoving = false;
-  //   self.isMovingTimeout = false;
-  //   var lastTouchCount;
-  //   var touchCenterX;
-  //   var touchCenterY;
-  //   var touchStartDistance;
-  //   var touchStartScale;
-  //   var touchX;
-  //   var touchY;
-  //   $('#map').mousemove(function (e) {
-  //     if (mouseDown) {
-  //       self.transX -= (oldPageX - e.pageX) / self.scale;
-  //       self.transY -= (oldPageY - e.pageY) / self.scale;
-  //       states.applyTransform();
-  //
-  //       oldPageX = e.pageX;
-  //       oldPageY = e.pageY;
-  //
-  //       self.isMoving = true;
-  //       if (self.isMovingTimeout) {
-  //         clearTimeout(self.isMovingTimeout);
-  //       }
-  //
-  //       self.container.trigger('drag');
-  //     }
-  //
-  //     return false;
-  //
-  //   }).mousedown(function (e) {
-  //
-  //     mouseDown = true;
-  //     oldPageX = e.pageX;
-  //     oldPageY = e.pageY;
-  //
-  //     return false;
-  //
-  //   }).mouseup(function () {
-  //
-  //     mouseDown = false;
-  //
-  //     clearTimeout(self.isMovingTimeout);
-  //     self.isMovingTimeout = setTimeout(function () {
-  //       self.isMoving = false;
-  //     }, 100);
-  //
-  //     return false;
-  //
-  //   }).mouseout(function () {
-  //
-  //     if(mouseDown && self.isMoving){
-  //
-  //       clearTimeout(self.isMovingTimeout);
-  //       self.isMovingTimeout = setTimeout(function () {
-  //         mouseDown = false;
-  //         self.isMoving = false;
-  //       }, 100);
-  //
-  //       return false;
-  //     }
-  //   })
-  // },
   componentDidMount: function() {
     $("polygon").mouseenter(function() {
-      $(this).attr("fill", "#F5841F");
+      $(this).addClass('active');
     });
     $("polygon").mouseleave(function() {
-      $(this).attr("fill", "transparent");
+        $(this).removeClass('active');
     });
-    ActionZoom;
-    var $pep = $('.zoom').pep();
-    $pep.pep({ debug: true, useCSSTranslation: false });
+    $('text').mouseenter(function() {
+      var id = $(this).parents().attr("id").slice(2);
+      $("polygon#zone" + id).addClass('active');
+    });
+    $('text').mouseleave(function() {
+      var id = $(this).parents().attr("id").slice(2);
+      $("polygon#zone" + id).removeClass('active');
+    });
+    var $pep = $('#drag').pep({
+
+    });
+    // Drag init
+    $pep.data('plugin_pep').setScale(2);
   },
   render: function() {
     return (
-      <div id="map">
+      <div id="map" className="map">
         <Zoom />
+        <Search />
         <svg viewBox="0 0 1440 600">
-          <Float5 />
+          <g id="zoom">
+            <Float5 />
+          </g>
         </svg>
+        <Controls />
       </div>
     )
   }

@@ -1,9 +1,9 @@
 var React = require('react');
-var MapImage = require('./mapimagesvg');
+var MapImage = require('../mapimagesvg');
 module.exports = React.createClass({
   render: function() {
     return (
-        <g id="float5" className="zoom">
+        <g id="drag" className="float5">
           <image overflow="visible" width="1440" height="600" xlinkHref={MapImage.float5} ></image>
             <polygon id="zone520" fill="transparent" points="1285.5,17.8 1194.7,36.8 1226.1,100.7 1226.1,118.6 1227.4,119.8 1228.9,119.5
   		1229.3,112.5 1231,112.5 1234.1,118.1 1324.8,98.9 	"/>
@@ -57,94 +57,94 @@ module.exports = React.createClass({
   	<polygon id="zone532" fill="transparent" points="1109.4,291.6 1016.3,310.5 1016.1,313.5 1015.4,331.8 1019.9,342 1020.9,323.5
   		1020.9,323.5 1022.6,323.5 1032.6,344 1125.6,324.4 	"/>
       <g id="id547" opacity="0.3804">
-  		<text transform="matrix(1 0 0 1 364.5002 448.8752)" fontFamily="Arial" fontSize="19.5">547</text>
+  		<text transform="matrix(1 0 0 1 364.5002 448.8752)"  fontSize="19.5">547</text>
   	</g>
   	<g id="id544" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 513.3752 351.3752)" fontFamily="Arial" fontSize="19.5">544</text>
+  		<text transform="matrix(1 0 0 1 513.3752 351.3752)"  fontSize="19.5">544</text>
   	</g>
   	<g id="id541" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 622.8752 328.8752)" fontFamily="Arial" fontSize="19.5">541</text>
+  		<text transform="matrix(1 0 0 1 622.8752 328.8752)"  fontSize="19.5">541</text>
   	</g>
   	<g id="id539" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 705.0002 310.1252)" fontFamily="Arial" fontSize="19.5">539</text>
+  		<text transform="matrix(1 0 0 1 705.0002 310.1252)"  fontSize="19.5">539</text>
   	</g>
   	<g id="id537" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 766.8752 297.3752)" fontFamily="Arial" fontSize="19.5">537</text>
+  		<text transform="matrix(1 0 0 1 766.8752 297.3752)"  fontSize="19.5">537</text>
   	</g>
   	<g id="id534" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 844.1252 280.1252)" fontFamily="Arial" fontSize="19.5">534</text>
+  		<text transform="matrix(1 0 0 1 844.1252 280.1252)"  fontSize="19.5">534</text>
   	</g>
   	<g id="id533" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 934.1252 300.0002)" fontFamily="Arial" fontSize="19.5">533</text>
+  		<text transform="matrix(1 0 0 1 934.1252 300.0002)"  fontSize="19.5">533</text>
   	</g>
   	<g id="id532" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 1055.6252 328.5002)" fontFamily="Arial" fontSize="19.5">532</text>
+  		<text transform="matrix(1 0 0 1 1055.6252 328.5002)"  fontSize="19.5">532</text>
   	</g>
   	<g id="id520" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 1241.6252 84.0002)" fontFamily="Arial" fontSize="19.5">520</text>
+  		<text transform="matrix(1 0 0 1 1241.6252 84.0002)"  fontSize="19.5">520</text>
   	</g>
   	<g id="id519" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 1147.8752 100.8752)" fontFamily="Arial" fontSize="19.5">519</text>
+  		<text transform="matrix(1 0 0 1 1147.8752 100.8752)"  fontSize="19.5">519</text>
   	</g>
   	<g id="id518" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 1055.6252 121.1252)" fontFamily="Arial" fontSize="19.5">518</text>
+  		<text transform="matrix(1 0 0 1 1055.6252 121.1252)"  fontSize="19.5">518</text>
   	</g>
   	<g id="id513" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 859.5002 141.3752)" fontFamily="Arial" fontSize="19.5">513</text>
+  		<text transform="matrix(1 0 0 1 859.5002 141.3752)"  fontSize="19.5">513</text>
   	</g>
   	<g id="id514" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 884.2502 188.6252)" fontFamily="Arial" fontSize="19.5">514</text>
+  		<text transform="matrix(1 0 0 1 884.2502 188.6252)"  fontSize="19.5">514</text>
   	</g>
   	<g id="id511" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 779.6252 163.1252)" fontFamily="Arial" fontSize="19.5">511</text>
+  		<text transform="matrix(1 0 0 1 779.6252 163.1252)"  fontSize="19.5">511</text>
   	</g>
   	<g id="id509" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 660.3752 186.0002)" fontFamily="Arial" fontSize="19.5">509</text>
+  		<text transform="matrix(1 0 0 1 660.3752 186.0002)"  fontSize="19.5">509</text>
   	</g>
   	<g id="id510" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 694.8752 228.7502)" fontFamily="Arial" fontSize="19.5">510</text>
+  		<text transform="matrix(1 0 0 1 694.8752 228.7502)"  fontSize="19.5">510</text>
   	</g>
   	<g id="id508" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 611.6252 246.3752)" fontFamily="Arial" fontSize="19.5">508</text>
+  		<text transform="matrix(1 0 0 1 611.6252 246.3752)"  fontSize="19.5">508</text>
   	</g>
   	<g id="id506" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 540.7502 213.0002)" fontFamily="Arial" fontSize="19.5">506</text>
+  		<text transform="matrix(1 0 0 1 540.7502 213.0002)"  fontSize="19.5">506</text>
   	</g>
   	<g id="id505" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 485.6252 265.8752)" fontFamily="Arial" fontSize="19.5">505</text>
+  		<text transform="matrix(1 0 0 1 485.6252 265.8752)"  fontSize="19.5">505</text>
   	</g>
   	<g id="id504" opacity="0.3804">
-  		<text transform="matrix(1 0 0 1 401.2502 269.2502)" fill="#010000" fontFamily="Arial" fontSize="19.5">504</text>
+  		<text transform="matrix(1 0 0 1 401.2502 269.2502)" fill="#010000"  fontSize="19.5">504</text>
   	</g>
   	<g id="id503" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 284.2502 290.6252)" fontFamily="Arial" fontSize="19.5">503</text>
+  		<text transform="matrix(1 0 0 1 284.2502 290.6252)"  fontSize="19.5">503</text>
   	</g>
   	<g id="id502" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 168.7502 315.3752)" fontFamily="Arial" fontSize="19.5">502</text>
+  		<text transform="matrix(1 0 0 1 168.7502 315.3752)"  fontSize="19.5">502</text>
   	</g>
   	<g id="id501" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 84.7502 329.6252)" fontFamily="Arial" fontSize="19.5">501</text>
+  		<text transform="matrix(1 0 0 1 84.7502 329.6252)"  fontSize="19.5">501</text>
   	</g>
   	<g id="id555" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 135.7502 510.7502)" fontFamily="Arial" fontSize="19.5">555</text>
+  		<text transform="matrix(1 0 0 1 135.7502 510.7502)"  fontSize="19.5">555</text>
   	</g>
   	<g id="id512" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 803.2502 210.3752)" fontFamily="Arial" fontSize="19.5">512</text>
+  		<text transform="matrix(1 0 0 1 803.2502 210.3752)"  fontSize="19.5">512</text>
   	</g>
   	<g id="id535" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 847.1252 327.7502)" fontFamily="Arial" fontSize="19.5">535</text>
+  		<text transform="matrix(1 0 0 1 847.1252 327.7502)"  fontSize="19.5">535</text>
   	</g>
   	<g id="id536" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 865.1252 367.5002)" fontFamily="Arial" fontSize="19.5">536</text>
+  		<text transform="matrix(1 0 0 1 865.1252 367.5002)"  fontSize="19.5">536</text>
   	</g>
   	<g id="id540" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 720.7502 378.0002)" fontFamily="Arial" fontSize="19.5">540</text>
+  		<text transform="matrix(1 0 0 1 720.7502 378.0002)"  fontSize="19.5">540</text>
   	</g>
   	<g id="id543" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 600.3752 402.0002)" fontFamily="Arial" fontSize="19.5">543</text>
+  		<text transform="matrix(1 0 0 1 600.3752 402.0002)"  fontSize="19.5">543</text>
   	</g>
   	<g id="id546" opacity="0.3608">
-  		<text transform="matrix(1 0 0 1 497.2502 418.1252)" fontFamily="Arial" fontSize="19.5">546</text>
+  		<text transform="matrix(1 0 0 1 497.2502 418.1252)"  fontSize="19.5">546</text>
   	</g>
         </g>
     );
