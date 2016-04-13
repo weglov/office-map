@@ -8,50 +8,74 @@ var Search = require('./search');
 module.exports = React.createClass({
   getInitialState: function() {
     return {
-      float: 5
+      float: 2,
+      active: true
     }
   },
   getDefaultProps:  function() {
       return {
-        float: 5
+        float: 2
       }
   },
   changeFloat: function() {
     return 5;
   },
-  componentDidMount: function() {
-    $("polygon").mouseenter(function() {
+  _updateMaps: function() {
+    $("polygon, path").mouseenter(function() {
       $(this).addClass('active');
     });
-    $("polygon").mouseleave(function() {
+    $("polygon, path").mouseleave(function() {
         $(this).removeClass('active');
     });
     $('text').mouseenter(function() {
       var id = $(this).parents().attr("id").slice(2);
-      $("polygon#zone" + id).addClass('active');
+      $("polygon#zone" + id+", path" +id).addClass('active');
     });
     $('text').mouseleave(function() {
       var id = $(this).parents().attr("id").slice(2);
-      $("polygon#zone" + id).removeClass('active');
+      $("polygon#zone" + id+", path" +id).removeClass('active');
     });
-    var $pep = $('#drag').pep({
-
-    });
+    var $pep = $('#drag').pep();
     // Drag init
     $pep.data('plugin_pep').setScale(2);
   },
+  componentDidMount: function() {
+    this._updateMaps();
+    var self = this;
+    setTimeout(function() {
+      self.setState({active: true})
+    }, 2000);
+  },
+  componentDidUpdate: function() {
+    this._updateMaps();
+    var self = this;
+    setTimeout(function() {
+      self.setState({active: true})
+    }, 100);
+  },
+  componentWillReceiveProps: function() {
+     this.setState({active: true});
+  },
+  _loaderMaps: function() {
+    console.log('loasd');
+  },
+  shouldComponentUpdate: function(nextProps, nextState) {
+    console.log(nextState);
+    return nextState.active !== this.state.active;
+  },
   _updateFloat: function(e) {
     this.setState({
-      float: e
+      float: e,
+      active: false
     });
   },
   render: function() {
+    var float_size = 'float' + this.state.float;
     return (
       <div id="map" className="map">
-        {Map}
         <Zoom />
         <Search />
-        <svg viewBox="0 0 1440 600">
+        <svg onLoad={this._loaderMaps} viewBox={'0 0 ' + Config[float_size].width + ' ' + Config[float_size].height} className={this.state.active ? 'fade-in' : ''} >
           <g id="zoom">
             <Float content={this.state.float}/>
           </g>

@@ -11,13 +11,13 @@ module.exports = {
     width: '1440'
   },
   float3: {
-    img:'./src/image/office1.png',
-    height: '600',
+    img:'./src/image/office3.png',
+    height: '1062',
     width: '1440'
   },
   float2: {
-    img:'./src/image/office1.png',
-    height: '600',
+    img:'./src/image/office2.png',
+    height: '668',
     width: '1440'
   },
   float1: {
