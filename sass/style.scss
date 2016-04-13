@@ -25,6 +25,8 @@ polygon.active {
 }
 text {
   cursor: pointer;
+  font-size: 17px;
+  text-align: center;
 }
 #map {
   background: #D4D5D7;
@@ -74,6 +76,8 @@ svg {
     vertical-align: bottom;
     padding: 10px 20px;
     background: $grey;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     margin: 0 10px;
     cursor: pointer;
     border-radius: 5px 5px 0px 0;

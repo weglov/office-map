@@ -1,17 +1,23 @@
 var React = require('react');
-var Float5 = require('./floats/float5');
+var Float = require('./floats/float');
 var Zoom = require('./zoom');
 var Controls = require('./controls');
 var Config = require('.././config');
 var Search = require('./search');
 
 module.exports = React.createClass({
+  getInitialState: function() {
+    return {
+      float: 5
+    }
+  },
   getDefaultProps:  function() {
       return {
-        transX: 0,
-        transY: 0,
-        scale: 1
+        float: 5
       }
+  },
+  changeFloat: function() {
+    return 5;
   },
   componentDidMount: function() {
     $("polygon").mouseenter(function() {
@@ -34,17 +40,23 @@ module.exports = React.createClass({
     // Drag init
     $pep.data('plugin_pep').setScale(2);
   },
+  _updateFloat: function(e) {
+    this.setState({
+      float: e
+    });
+  },
   render: function() {
     return (
       <div id="map" className="map">
+        {Map}
         <Zoom />
         <Search />
         <svg viewBox="0 0 1440 600">
           <g id="zoom">
-            <Float5 />
+            <Float content={this.state.float}/>
           </g>
         </svg>
-        <Controls />
+        <Controls float={this.state.float} changeFloat={this._updateFloat} />
       </div>
     )
   }
