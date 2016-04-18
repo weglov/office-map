@@ -26,9 +26,9 @@ module.exports = React.createClass({
       if (map == 5) {
         Float = <Float5/>
       }
-      else if (map == 4) {
-        Float = <Float4/>;
-      }
+      // else if (map == 4) {
+      //   Float = <Float4/>;
+      // }
       else if (map == 3) {
         Float = <Float3/>;
       }
@@ -37,6 +37,9 @@ module.exports = React.createClass({
       }
       else if (map == 1) {
         Float = <Float1/>;
+      }
+      else {
+        
       }
     return (
         <g id="drag" ref="drag" className={'float__' + map}>

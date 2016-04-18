@@ -20,6 +20,7 @@ module.exports = React.createClass({
             <li className={"floats__item floats__item--3" + this._activeClass(3)} onClick={this._changeFloat.bind(this, 3)}>3 этаж</li>
             <li className={"floats__item floats__item--4" + this._activeClass(4) + "floats__item--disable"} >4 этаж</li>
             <li className={"floats__item floats__item--5" + this._activeClass(5)} onClick={this._changeFloat.bind(this, 5)}>5 этаж</li>
+            <li className={"floats__item floats__item--5" + this._activeClass(6)} onClick={this._changeFloat.bind(this, 6)}>6 этаж</li>
         </ul>
     )
   }

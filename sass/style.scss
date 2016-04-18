@@ -23,6 +23,9 @@ polygon, path {
 polygon.active, path.active {
   fill: $orange;
 }
+polygon.active_zone, path.active_zone {
+  fill: $orange;
+}
 text {
   cursor: pointer;
   font-size: 17px;
@@ -40,21 +43,22 @@ height: 100%;
   position: absolute;
   top:0;
   z-index: 200;
-  left: 0;
+  right: 0;
   margin: 0px 10px;
   &__zoom {
     -webkit-user-select: none;
     -moz-user-select: none;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 4px;
     background: $grey;
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     margin: 20px 10px;
     cursor: pointer;
+    display: block;
     &:hover {
       background: $black;
     }
@@ -96,23 +100,61 @@ svg {
     }
   }
 }
-.react-search {
+.search {
   position: absolute;
   top: 0;
   z-index: 200;
   left: 0;
-  margin: 20px 0 0 100px;
+  margin: 20px 0 0 20px;
   outline: none;
+  &__icon {
+    position: absolute;
+    border-radius: 4px 0 0 4px;
+    height: 41px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    background: $grey;
+    &--icon {
+      height: 41px;
+      width: 40px;
+      border-radius: 4px 0 0 4px;
+      background-size: 20px 20px;
+background-repeat: no-repeat;
+background-position: center center;
+    background-image:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDQ2LjI1IDQ0Ni4yNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDQ2LjI1IDQ0Ni4yNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJzZWFyY2giPgoJCTxwYXRoIGQ9Ik0zMTguNzUsMjgwLjVoLTIwLjRsLTcuNjQ5LTcuNjVjMjUuNS0yOC4wNSw0MC44LTY2LjMsNDAuOC0xMDcuMUMzMzEuNSw3My45NSwyNTcuNTUsMCwxNjUuNzUsMFMwLDczLjk1LDAsMTY1Ljc1ICAgIFM3My45NSwzMzEuNSwxNjUuNzUsMzMxLjVjNDAuOCwwLDc5LjA1LTE1LjMsMTA3LjEtNDAuOGw3LjY1LDcuNjQ5djIwLjRMNDA4LDQ0Ni4yNUw0NDYuMjUsNDA4TDMxOC43NSwyODAuNXogTTE2NS43NSwyODAuNSAgICBDMTAyLDI4MC41LDUxLDIyOS41LDUxLDE2NS43NVMxMDIsNTEsMTY1Ljc1LDUxUzI4MC41LDEwMiwyODAuNSwxNjUuNzVTMjI5LjUsMjgwLjUsMTY1Ljc1LDI4MC41eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)
+    }
+  }
+  &__clear {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    display: none;
+    &.active{
+    display: block;
+    color: #fff;
+    cursor: pointer;
+      .search__float {
+        padding: 0 10px;
+        vertical-align: initial;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.react-search {
+  margin-left: 40px;
   &__input {
     padding: 10px;
     width: 380px;
-    border-radius: 4px;
+    border-radius: 0 4px 4px 0;
     border: 1px solid $grey;
     outline: none;
   }
   &__menu-items {
     background: #fff;
-    margin: -1px 7px 0;
+    margin: -1px 0px 0;
     padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
@@ -123,6 +165,11 @@ svg {
   }
   &__menu--hidden {
     display: none;
+  }
+  &__active {
+        border: 1px solid $orange;
+        background: $orange;
+        color: #fff;
   }
   &__menu-item {
       padding: 10px 10px;
@@ -143,6 +190,44 @@ svg {
       }
   }
 }
+
+
+
+
+
+.tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: 0;
+  opacity: 1;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out , margin-top 0.3s ease-out, margin-left 0.3s ease-out;
+  top: 0;
+  visibility: visible;
+  z-index: 999;
+  &:after {
+      border-top: 8px solid #222;
+  }
+  &.multi-line {
+    display: block;
+    padding: 2px 0px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 svg {
   opacity:0;  /* make things invisible upon start */
