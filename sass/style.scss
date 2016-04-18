@@ -96,7 +96,7 @@ svg {
     }
   }
 }
-.search {
+.react-search {
   position: absolute;
   top: 0;
   z-index: 200;
@@ -109,6 +109,38 @@ svg {
     border-radius: 4px;
     border: 1px solid $grey;
     outline: none;
+  }
+  &__menu-items {
+    background: #fff;
+    margin: -1px 7px 0;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 274px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid $grey;
+    border-top: none;
+  }
+  &__menu--hidden {
+    display: none;
+  }
+  &__menu-item {
+      padding: 10px 10px;
+      &:hover {
+        background: $orange;
+        cursor: pointer;
+        a {
+          color: #fff;
+          &:nth-child(2) {
+            color: #fff;
+          }
+        }
+      }
+      a:nth-child(2) {
+        float: right;
+        color: $grey;
+        font-weight: 500;
+      }
   }
 }
 

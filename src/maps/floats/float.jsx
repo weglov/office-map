@@ -39,7 +39,7 @@ module.exports = React.createClass({
         Float = <Float1/>;
       }
     return (
-        <g id="drag" className={'float__' + map}>
+        <g id="drag" ref="drag" className={'float__' + map}>
           <image overflow="visible" width={img.width} height={img.height} xlinkHref={img.img} ></image>
           {Float}
         </g>

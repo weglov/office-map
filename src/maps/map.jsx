@@ -37,7 +37,6 @@ module.exports = React.createClass({
     });
     var $pep = $('#drag').pep();
     // Drag init
-    $pep.data('plugin_pep').setScale(2);
   },
   componentDidMount: function() {
     this._updateMaps();
@@ -56,9 +55,6 @@ module.exports = React.createClass({
   componentWillReceiveProps: function() {
      this.setState({active: true});
   },
-  _loaderMaps: function() {
-    console.log('loasd');
-  },
   shouldComponentUpdate: function(nextProps, nextState) {
     console.log(nextState);
     return nextState.active !== this.state.active;
@@ -72,11 +68,11 @@ module.exports = React.createClass({
   render: function() {
     var float_size = 'float' + this.state.float;
     return (
-      <div id="map" className="map">
+      <div id="map" ref="map" className="map">
         <Zoom />
         <Search />
         <svg onLoad={this._loaderMaps} viewBox={'0 0 ' + Config[float_size].width + ' ' + Config[float_size].height} className={this.state.active ? 'fade-in' : ''} >
-          <g id="zoom">
+          <g id="zoom" ref="zoom">
             <Float content={this.state.float}/>
           </g>
         </svg>
