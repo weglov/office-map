@@ -19,8 +19,15 @@ body {
 polygon, path {
   cursor: pointer;
   fill: transparent;
+  z-index: 200;
+}
+#float_way {
+  opacity: 1;
 }
 polygon.active, path.active {
+  fill: $orange;
+}
+#float_way polygon {
   fill: $orange;
 }
 polygon.active_zone, path.active_zone {
@@ -28,7 +35,7 @@ polygon.active_zone, path.active_zone {
 }
 text {
   cursor: pointer;
-  font-size: 17px;
+  font-size: 14px;
   text-align: center;
 }
 #map {
@@ -228,6 +235,11 @@ background-position: center center;
   }
   &.true {
     opacity: 1;
+    visibility: visible;
+    &.false {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
       &__room {
         background: $orange;
@@ -235,8 +247,14 @@ background-position: center center;
         margin: -5px -5px 0px;
         padding: 5px;
         color: #fff;
+        text-align: center;
+        font-size: 16px;
         font-weight: 500;
         margin-bottom: 5px;
+      }
+      &__name {
+        display: block;
+        padding: 3px 0;
       }
   &:after {
     content: "";

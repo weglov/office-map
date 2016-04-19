@@ -56,96 +56,130 @@ module.exports = React.createClass({
         <polygon id="zone533" fill="transparent" points="971.6,220.4 882.1,239.6 941,364 1031,344.7 	"/>
         <polygon id="zone532" fill="transparent" points="1109.4,291.6 1016.3,310.5 1016.1,313.5 1015.4,331.8 1019.9,342 1020.9,323.5
         1020.9,323.5 1022.6,323.5 1032.6,344 1125.6,324.4 	"/>
-        <g id="id547" opacity="0.3804">
-        <text transform="matrix(1 0 0 1 364.5002 448.8752)"  fontSize="19.5">547</text>
+        <g id="float_way">
+        	<g id="way_535">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1061.5,189.8 479.5,318 486.8,397.5
+        				572.2,377.8 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="567.5,384.1 571.3,378 565.2,374.2 569.4,373.2 575.5,377 571.7,383.1 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_538">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1062.3,189.8 322,352.7 368.3,444
+        				183.7,484.3 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="188.4,478 184.5,484.1 190.6,488 186.4,488.9 180.3,485 184.2,478.9 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_525">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1060.3,190.2 900.6,225.4 921.6,268.1
+        				901.4,272.8 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="906.1,266.5 902.3,272.6 908.4,276.4 904.2,277.4 898.1,273.6 901.9,267.5 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_527">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1060.1,190.1 900.7,225.4 921.6,268.1
+        				866.9,281 887.4,324.2 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="880.3,321 887.1,323.4 889.5,316.6 891.3,320.5 888.9,327.3 882.1,324.9 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_526">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1060.1,190.1 900.7,225.4 921.5,268
+        				866.9,281 871.5,290.1 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="864.3,287 871.1,289.3 873.4,282.5 875.3,286.3 873,293.2 866.2,290.9 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_524">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1061.6,190 900.8,225.5 960.6,347.8
+        				1014.4,334.8 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="1009.8,341.1 1013.6,335 1007.4,331.3 1011.6,330.2 1017.8,334 1014,340.1 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_529">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1062.8,189.6 805.1,246.3 818.6,274.4
+        				747.6,290.3 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="752.3,284 748.5,290.1 754.5,293.9 750.3,294.9 744.3,291 748.1,284.9 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_513">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1062.2,189.7 893,227 866.3,173.8
+        				"/>
+        			<g>
+        				<polygon fill="#F5841F" points="873.5,176.9 866.7,174.6 864.4,181.4 862.5,177.6 864.8,170.8 871.6,173 				"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g id="way_501">
+        		<g>
+        			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="1061.8,190.1 322,352.7 301.3,314.2
+        				161.7,344 			"/>
+        			<g>
+        				<polygon fill="#F5841F" points="166.5,337.7 162.6,343.8 168.6,347.7 164.4,348.6 158.3,344.7 162.2,338.6 				"/>
+        			</g>
+        		</g>
+        	</g>
         </g>
-        <g id="id544" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 513.3752 351.3752)"  fontSize="19.5">544</text>
-        </g>
-        <g id="id541" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 622.8752 328.8752)"  fontSize="19.5">541</text>
-        </g>
-        <g id="id539" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 705.0002 310.1252)"  fontSize="19.5">539</text>
-        </g>
-        <g id="id537" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 766.8752 297.3752)"  fontSize="19.5">537</text>
-        </g>
-        <g id="id534" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 844.1252 280.1252)"  fontSize="19.5">534</text>
-        </g>
-        <g id="id533" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 934.1252 300.0002)"  fontSize="19.5">533</text>
-        </g>
-        <g id="id532" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 1055.6252 328.5002)"  fontSize="19.5">532</text>
-        </g>
-        <g id="id520" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 1241.6252 84.0002)"  fontSize="19.5">520</text>
-        </g>
-        <g id="id519" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 1147.8752 100.8752)"  fontSize="19.5">519</text>
-        </g>
-        <g id="id518" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 1055.6252 121.1252)"  fontSize="19.5">518</text>
-        </g>
-        <g id="id513" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 859.5002 141.3752)"  fontSize="19.5">513</text>
-        </g>
-        <g id="id514" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 884.2502 188.6252)"  fontSize="19.5">514</text>
-        </g>
-        <g id="id511" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 779.6252 163.1252)"  fontSize="19.5">511</text>
-        </g>
-        <g id="id509" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 660.3752 186.0002)"  fontSize="19.5">509</text>
-        </g>
-        <g id="id510" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 694.8752 228.7502)"  fontSize="19.5">510</text>
-        </g>
-        <g id="id508" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 611.6252 246.3752)"  fontSize="19.5">508</text>
-        </g>
-        <g id="id506" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 540.7502 213.0002)"  fontSize="19.5">506</text>
-        </g>
-        <g id="id505" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 485.6252 265.8752)"  fontSize="19.5">505</text>
-        </g>
-        <g id="id504" opacity="0.3804">
-        <text transform="matrix(1 0 0 1 401.2502 269.2502)" fill="#010000"  fontSize="19.5">504</text>
-        </g>
-        <g id="id503" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 284.2502 290.6252)"  fontSize="19.5">503</text>
-        </g>
-        <g id="id502" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 168.7502 315.3752)"  fontSize="19.5">502</text>
-        </g>
-        <g id="id501" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 84.7502 329.6252)"  fontSize="19.5">501</text>
-        </g>
-        <g id="id555" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 135.7502 510.7502)"  fontSize="19.5">555</text>
-        </g>
-        <g id="id512" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 803.2502 210.3752)"  fontSize="19.5">512</text>
-        </g>
-        <g id="id535" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 847.1252 327.7502)"  fontSize="19.5">535</text>
-        </g>
-        <g id="id536" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 865.1252 367.5002)"  fontSize="19.5">536</text>
-        </g>
-        <g id="id540" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 720.7502 378.0002)"  fontSize="19.5">540</text>
-        </g>
-        <g id="id543" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 600.3752 402.0002)"  fontSize="19.5">543</text>
-        </g>
-        <g id="id546" opacity="0.3608">
-        <text transform="matrix(1 0 0 1 497.2502 418.1252)"  fontSize="19.5">546</text>
-        </g>
+        <g id="float5_text" clasName="text">
+        			<text id="id547" transform="matrix(1 0 0 1 342.8336 476.2086)" >537</text>
+        			<text id="id544" transform="matrix(1 0 0 1 513.3752 351.3752)" >533</text>
+        			<text id="id541" transform="matrix(1 0 0 1 622.8752 328.8752)" >531</text>
+        			<text id="id541" transform="matrix(1 0 0 1 574.3752 337.8752)" >532</text>
+        			<text id="id539" transform="matrix(1 0 0 1 705.0002 310.1252)" >529</text>
+        			<text id="id537" transform="matrix(1 0 0 1 766.8752 297.3752)" >528</text>
+        			<text id="id534" transform="matrix(1 0 0 1 844.1252 280.1252)" >525</text>
+        			<text id="id533" transform="matrix(1 0 0 1 934.1252 300.0002)" >523</text>
+        			<text id="id520" transform="matrix(1 0 0 1 1248.2919 288.5002)" >520</text>
+        			<text id="id522" transform="matrix(1 0 0 1 1060.7919 276.5002)" >522</text>
+        			<text id="id524" transform="matrix(1 0 0 1 1055.2919 329.5002)" >524</text>
+              <text id="id520" transform="matrix(1 0 0 1 1241.6252 84.0002)" >519</text>
+        			<text id="id519" transform="matrix(1 0 0 1 1147.8752 100.8752)" >518</text>
+        			<text id="id518" transform="matrix(1 0 0 1 1055.6252 121.1252)" >517</text>
+        			<text id="id518" transform="matrix(1 0 0 1 985.6252 114.1252)" >515</text>
+        			<text id="id518_3_" transform="matrix(1 0 0 1 1003.6252 153.6252)" >516</text>
+        			<text id="id513" transform="matrix(1 0 0 1 859.5002 141.3752)" >513</text>
+        			<text id="id514" transform="matrix(1 0 0 1 884.2502 188.6252)" >514</text>
+        			<text id="id511" transform="matrix(1 0 0 1 779.6252 163.1252)" >511</text>
+        			<text id="id509" transform="matrix(1 0 0 1 696.3752 227.5002)" >509</text>
+        			<text id="id510" transform="matrix(1 0 0 1 661.3752 182.2502)" >510</text>
+        			<text id="id508" transform="matrix(1 0 0 1 611.6252 246.3752)" >508</text>
+        			<text id="id506" transform="matrix(1 0 0 1 540.7502 213.0002)" >506</text>
+        			<text id="id505" transform="matrix(1 0 0 1 485.6252 265.8752)" >505</text>
+        			<text id="id504" transform="matrix(1 0 0 1 401.2502 269.2502)">504</text>
+        			<text id="id503" transform="matrix(1 0 0 1 284.2502 290.6252)" >503</text>
+        			<text id="id502" transform="matrix(1 0 0 1 168.7502 315.3752)" >502</text>
+        			<text id="id501" transform="matrix(1 0 0 1 84.7502 329.6252)" >501</text>
+        			<text id="id555" transform="matrix(1 0 0 1 135.7502 510.7502)" >538</text>
+        			<text id="id555" transform="matrix(1 0 0 1 118.2502 463.2502)" >539</text>
+        			<text id="id555_3_" transform="matrix(1 0 0 1 100.7502 429.2502)" >540</text>
+        			<text id="id555_4_" transform="matrix(1 0 0 1 193.7502 407.7502)" >541</text>
+        			<text id="id555_5_" transform="matrix(1 0 0 1 296.7502 410.2502)" >536</text>
+        			<text id="id512" transform="matrix(1 0 0 1 803.2502 210.3752)" >512</text>
+        			<text id="id535" transform="matrix(1 0 0 1 847.1252 327.7502)" >526</text>
+        			<text id="id536" transform="matrix(1 0 0 1 865.1252 367.5002)" >527</text>
+        			<text id="id540" transform="matrix(1 0 0 1 720.7502 378.0002)" >530</text>
+        			<text id="id535_3_" transform="matrix(1 0 0 1 600.3752 402.0002)" >535</text>
+              <text id="id534" transform="matrix(1 0 0 1 497.2502 418.1252)" >534</text>
+        	</g>
       </g>
     )
   }

@@ -1,12 +1,17 @@
 module.exports = {
   container: '#map',
+  float6: {
+    img:'./src/image/office6.png',
+    height: '600',
+    width: '1440'
+  },
   float5: {
-    img:'./src/image/office5.png',
+    img:'./src/image/office5.jpg',
     height: '600',
     width: '1440'
   },
   float4: {
-    img:'./src/image/office1.png',
+    img:'./src/image/office6.png',
     height: '600',
     width: '1440'
   },
@@ -22,7 +27,7 @@ module.exports = {
   },
   float1: {
     img:'./src/image/office1.png',
-    height: '600',
+    height: '861',
     width: '1440'
   },
   zoomStep: 0.35,
@@ -33,5 +38,15 @@ module.exports = {
   },
   removeTooltip: function() {
     $('.tooltip').removeClass('true')
-  }
+  },
+  dublicate: {
+      "325": "326",
+      "326": "325",
+      "310": "311",
+      "311": "310",
+      "307": "308",
+      "308": "307",
+      "327": "329",
+      "329": "327"
+    }
 }

@@ -1,10 +1,10 @@
 var React = require('react');
 var Config = require('../../config');
 var Float5 = require('./float5');
-// var Float4 = require('./float5');
+var Float6 = require('./float6');
 var Float3 = require('./float3');
 var Float2 = require('./float2');
-// var Float1 = require('./float5');
+var Float1 = require('./float1');
 
 module.exports = React.createClass({
   getInitialState: function() {
@@ -39,7 +39,7 @@ module.exports = React.createClass({
         Float = <Float1/>;
       }
       else {
-        
+          Float = <Float6/>;
       }
     return (
         <g id="drag" ref="drag" className={'float__' + map}>
