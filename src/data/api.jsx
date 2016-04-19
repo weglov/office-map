@@ -9,5 +9,14 @@ module.exports = {
     .then(function(response) {
       return response.json()
     })
+  },
+  array: function(arr, zone) {
+          var array = [];
+      for(var idx = 0, l = arr.length;idx < l;idx++) {
+        if (arr[idx] && arr[idx].zone === zone) {
+          array.push(arr[idx]);
+        }
+      }
+      return array;
   }
 };

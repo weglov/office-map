@@ -13,6 +13,7 @@ module.exports = React.createClass({
       this.state.zoom = this.state.zoom + Config.zoomStep;
       var translateX = this.state.translate;
       var translateY = translateX / 2;
+      Config.removeTooltip();
       $('#zoom').css({
                 '-webkit-transform' : 'scale(' + this.state.zoom + ') translate(' + translateX + '%,'+ translateY +'%)',
                    '-moz-transform' : 'scale(' + this.state.zoom + ') translate(' + translateX + '%,'+ translateY +'%)',
@@ -24,6 +25,7 @@ module.exports = React.createClass({
   },
   zoomOut: function() {
     if (this.state.zoom > Config.zoomMinStep) {
+      Config.removeTooltip();
       this.state.translate = this.state.translate + 12;
       this.state.zoom = this.state.zoom - Config.zoomStep;
       var translateX = this.state.translate;

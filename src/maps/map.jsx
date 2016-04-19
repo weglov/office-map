@@ -10,19 +10,16 @@ var Api = require('../data/api');
 module.exports = React.createClass({
   getInitialState: function() {
     return {
-      float: 2,
+      float: 3,
       active: true,
       zone: 0,
-      elem: []
+      elem: [],
+      offsetX: 0,
+      offsetY: 0
     }
   },
-  getDefaultProps:  function() {
-      return {
-        float: 2
-      }
-  },
   _updateMaps: function() {
-    $("polygon, path").mouseenter(function() {
+    $("polygon, path").mouseenter(function(e) {
       $(this).addClass('active');
     });
     $("polygon, path").mouseleave(function() {
@@ -47,19 +44,18 @@ module.exports = React.createClass({
   },
   componentDidMount: function() {
     this._updateMaps();
+    var self = this;
+    Api.get('zonelist/')
+      .then(function(json){
+        self.setState({
+          elem: json,
+        })
+      }.bind(this));
   },
   componentDidUpdate: function() {
     if (this.state.zone != 0) {
       this._selectZone(this.state.zone);
     }
-    $("polygon, path").click(function() {
-      var id = $(this).attr("id").slice(4);
-      Api.get('zonelist/zone/' + id)
-        .then(function(json){
-          self.setState({elem: json})
-        }.bind(self));
-    });
-
     this._updateMaps();
     var self = this;
     setTimeout(function() {
@@ -97,7 +93,7 @@ module.exports = React.createClass({
     return (
       <div id="map" ref="map" className="map">
         <Zoom />
-        <Tooltip elem={this.state.elem} />
+        <Tooltip elem={this.state.elem} x={this.state.offsetX} y={this.state.offsetY}/>
         <Search activeZone={this._activeZone}/>
         <svg onLoad={this._loaderMaps} viewBox={'0 0 ' + Config[float_size].width + ' ' + Config[float_size].height} className={this.state.active ? 'fade-in' : ''} >
           <g id="zoom" ref="zoom">
