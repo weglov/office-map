@@ -24,9 +24,14 @@ module.exports = React.createClass({
   _hover_text: function() {
     var self = this;
     $("text").hover(function(e) {
-      var id = $(this).attr("id").slice(2);
+      try {
+        var id = $(this).attr("id").slice(2);
+      } catch (e) {
+        var id = 0;
+      }
       if (id) {
           $("polygon#zone" + id + ", path#zone" + id).addClass('active');
+          $('#way_'+id).addClass('active');
         }
     });
   },
@@ -39,10 +44,26 @@ module.exports = React.createClass({
       try {
          var id = $(this).attr("id").slice(4);
       } catch(e) {
-        var id = 0
+         var id = 0
       }
+      var ids = parseInt(id)
+      if (ids > 232 && ids < 252) {
+        $('#way_9_').addClass('active');
+      } else if (ids > 200 && ids < 206) {
+        $('#way_3_').addClass('active');
+      } else if (ids >= 215 && ids <= 220) {
+        $('#way_6_').addClass('active');
+      } else if (ids >= 332 && ids <= 337) {
+        $('#way_332-337').addClass('active');
+      } else if (ids >= 332 && ids <= 337) {
+        $('#way_332-337').addClass('active');
+      }
+      else {
+        $('#way_'+id).addClass('active');
+      }
+
       var newelem = Api.array(self.state.elem, id);
-      if (self.state.zone != id) {
+      if (self.state.zone !== id) {
         self.setState({
             zone: id,
             x: x,
@@ -52,7 +73,9 @@ module.exports = React.createClass({
         });
       }
     }, function(e) {
+      $('polygon.active, path.active').removeClass('active');
       $(this).removeClass('active');
+      $('#float_way .active').removeClass('active');
     });
   },
   componentDidUpdate: function() {

@@ -36,6 +36,9 @@ module.exports = React.createClass({
   _activeZone: function(e, float) {
     return this.props.activeZone(e, float);
   },
+  _navigation: function() {
+    
+  },
   _clear: function() {
     $('.react-search__input').val('').removeClass('react-search__active');
     $("polygon.active_zone, path.active_zone").removeClass('active_zone');

@@ -177,82 +177,82 @@ module.exports = React.createClass({
           	</g>
           </g>
         <g id="float2_text" clasName="text">
-          			<text id="id221_1_" transform="matrix(1.0001 0 0 1 355.0122 400.2377)" >221</text>
-          			<text id="id205_1_" transform="matrix(1.0001 0 0 1 484.689 528.876)" >205</text>
-          			<text id="id201_1_" transform="matrix(1.0001 0 0 1 345.0372 470.5662)" >201</text>
-          			<text id="id202_1_" transform="matrix(1.0001 0 0 1 393.6342 453.9438)" >202</text>
-          			<text id="id203_1_" transform="matrix(1.0001 0 0 1 438.9059 445.7594)" >203</text>
-          			<text id="id222_1_" transform="matrix(1.0001 0 0 1 426.8847 370.5708)" >222</text>
-          			<text id="id220_1_" transform="matrix(1.0001 0 0 1 335.8295 322.2358)" >220</text>
-          			<text id="id218_1_" transform="matrix(1.0001 0 0 1 439.6733 299.4744)" >218</text>
-          			<text id="id219_1_" transform="matrix(1.0001 0 0 1 388.0073 310.4716)" >219</text>
-          			<text id="id223_1_" transform="matrix(1.0001 0 0 1 487.247 359.5746)" >223</text>
-          			<text id="id224_1_" transform="matrix(1.0001 0 0 1 568.3268 341.9274)" >224</text>
-          			<text id="id225_1_" transform="matrix(1.0001 0 0 1 651.1971 322.7477)" >225</text>
-          			<text id="id226_1_" transform="matrix(1.0001 0 0 1 735.0913 304.3341)" >226</text>
-          			<text id="id227_1_" transform="matrix(1.0001 0 0 1 816.4265 286.4319)" >227</text>
-          			<text id="id228_1_" transform="matrix(1.0001 0 0 1 796.6304 215.8389)" >228</text>
-          			<text id="id229_1_" transform="matrix(1.0001 0 0 1 888.6191 196.5205)" >229</text>
-          			<text id="id230_1_" transform="matrix(1.0001 0 0 1 924.8739 154.4688)" >230</text>
-          			<text id="id231_1_" transform="matrix(1.0001 0 0 1 975.0052 144.2386)" >231</text>
-          			<text id="id232_1_" transform="matrix(1.0001 0 0 1 1028.7178 132.7304)" >232</text>
-          			<text id="id233_1_" transform="matrix(1.0001 0 0 1 1007.2329 71.6078)" >233</text>
-          			<text id="id234_1_" transform="matrix(1.0001 0 0 1 964.0073 80.3032)" >234</text>
-          			<text id="id235_1_" transform="matrix(1.0001 0 0 1 923.3392 88.9986)" >235</text>
-          			<text id="id236_1_" transform="matrix(1.0001 0 0 1 882.4156 96.415)" >236</text>
-          			<text id="id237_1_" transform="matrix(1.0001 0 0 1 841.2367 105.1104)" >237</text>
-          			<text id="id238_1_" transform="matrix(1.0001 0 0 1 800.5681 113.2938)" >238</text>
-          			<text id="id239_1_" transform="matrix(1.0001 0 0 1 759.1332 121.7332)" >239</text>
-          			<text id="id240_1_" transform="matrix(1.0001 0 0 1 718.721 130.9405)" >240</text>
-        			<text id="id241_1_" transform="matrix(1.0001 0 0 1 677.7975 139.1239)" >241</text>
-          			<text id="id242_1_" transform="matrix(1.0001 0 0 1 636.618 148.5863)" >242</text>
-          			<text id="id243_1_" transform="matrix(1.0001 0 0 1 596.4618 158.0486)" >243</text>
-          			<text id="id244_1_" transform="matrix(1.0001 0 0 1 554.7709 167.2559)" >244</text>
-          			<text id="id245_1_" transform="matrix(1.0001 0 0 1 513.8474 175.9513)" >245</text>
-          			<text id="id246_1_" transform="matrix(1.0001 0 0 1 473.4352 185.1576)" >246</text>
-          			<text id="id247_1_" transform="matrix(1.0001 0 0 1 432.5117 194.3645)" >247</text>
-          			<text id="id248_1_" transform="matrix(1.0001 0 0 1 390.5648 202.2924)" >248</text>
-          			<text id="id249_1_" transform="matrix(1.0001 0 0 1 349.8967 211.2438)" >249</text>
-          			<text id="id250_1_" transform="matrix(1.0001 0 0 1 310.7639 219.4272)" >250</text>
-          			<text id="id251_1_" transform="matrix(1.0001 0 0 1 262.6787 221.985)" >251</text>
-          			<text id="id252_1_" transform="matrix(1.0001 0 0 1 319.9716 285.6644)" >252</text>
-          			<text id="id253_1_" transform="matrix(1.0001 0 0 1 370.3588 274.9232)" >253</text>
-          			<text id="id254_1_" transform="matrix(1.0001 0 0 1 422.2806 263.415)" >254</text>
-          			<text id="id255_1_" transform="matrix(1.0001 0 0 1 525.9412 274.1112)" >255</text>
-          			<text id="id256_1_" transform="matrix(1.0001 0 0 1 563.7231 231.9583)" >256</text>
-          			<text id="id257_1_" transform="matrix(1.0001 0 0 1 617.1793 220.7061)" >257</text>
-          			<text id="id258_1_" transform="matrix(1.0001 0 0 1 672.1706 208.43)" >258</text>
-          			<text id="id259_1_" transform="matrix(1.0001 0 0 1 726.65 196.6658)" >259</text>
-          			<text id="id209_1_" transform="matrix(1.0001 0 0 1 911.5735 265.2049)" >209</text>
-          			<text id="id210_1_" transform="matrix(1.0001 0 0 1 1004.9304 234.5161)" >210</text>
-            		<text id="id211_1_" transform="matrix(1.0001 0 0 1 1067.8501 222.496)" >211</text>
-          			<text id="id212_1_" transform="matrix(1.0001 0 0 1 1046.8782 168.5348)" >212</text>
-          			<text id="id213_1_" transform="matrix(1.0001 0 0 1 992.9087 180.299)" >213</text>
-          			<text id="id214_1_" transform="matrix(1.0001 0 0 1 944.0562 190.5283)" >214</text>
-          			<text id="id215_1_" transform="matrix(1.0001 0 0 1 748.9022 232.2143)" >215</text>
-          			<text id="id216_1_" transform="matrix(1.0001 0 0 1 695.446 243.9784)" >216</text>
-          			<text id="id217_1_" transform="matrix(1.0001 0 0 1 579.0692 269.0416)" >217</text>
-          			<text id="id208_1_" transform="matrix(1.0001 0 0 1 963.9548 273.9461)" >208</text>
-          			<text id="id260_1_" transform="matrix(1.0001 0 0 1 1038.1819 284.1305)" >260</text>
-              			<text id="id268_3_" transform="matrix(1.0001 0 0 1 1069.8977 253.1853)" >268</text>
-          			<text id="id268_1_" transform="matrix(1.0001 0 0 1 1108.7742 274.1563)" >268</text>
-          			<text id="id269_1_" transform="matrix(1.0001 0 0 1 1124.8881 307.9138)" >269</text>
-          			<text id="id270_1_" transform="matrix(1.0001 0 0 1 1160.696 282.0842)" >270</text>
-          			<text id="id271_1_" transform="matrix(1.0001 0 0 1 1268.8881 281.0612)" >271</text>
-          			<text id="id272_1_" transform="matrix(1.0001 0 0 1 1327.9716 327.6064)" >272</text>
-          		<text transform="matrix(1.0001 0 0 1 1301.3707 334.7669)" >WC</text>
-          		<text transform="matrix(1.0001 0 0 1 1323.8793 363.9223)" >WC</text>
-          		<text transform="matrix(1.0001 0 0 1 1341.272 410.4665)" >WC</text>
-          		<text transform="matrix(1.0001 0 0 1 174.9487 323.5147)" >WC</text>
-          		<text transform="matrix(1.0001 0 0 1 217.9184 314.3074)" >WC</text>
-          			<text id="id262_1_" transform="matrix(1.0001 0 0 1 954.7991 426.0678)" >262</text>
-          			<text id="id263_1_" transform="matrix(1.0001 0 0 1 1022.6563 470.8368)" >263</text>
-          			<text id="id267_1_" transform="matrix(1.0001 0 0 1 1084.9878 395.6335)" >267</text>
-          			<text id="id266_1_" transform="matrix(1.0001 0 0 1 1105.4489 460.3373)" >266</text>
-          			<text id="id265_1_" transform="matrix(1.0001 0 0 1 1175.2753 444.48)" >265</text>
+          			<text id="id221" transform="matrix(1.0001 0 0 1 355.0122 400.2377)" >221</text>
+          			<text id="id205" transform="matrix(1.0001 0 0 1 484.689 528.876)" >205</text>
+          			<text id="id201" transform="matrix(1.0001 0 0 1 345.0372 470.5662)" >201</text>
+          			<text id="id202" transform="matrix(1.0001 0 0 1 393.6342 453.9438)" >202</text>
+          			<text id="id203" transform="matrix(1.0001 0 0 1 438.9059 445.7594)" >203</text>
+          			<text id="id222" transform="matrix(1.0001 0 0 1 426.8847 370.5708)" >222</text>
+          			<text id="id220" transform="matrix(1.0001 0 0 1 335.8295 322.2358)" >220</text>
+          			<text id="id218" transform="matrix(1.0001 0 0 1 439.6733 299.4744)" >218</text>
+          			<text id="id219" transform="matrix(1.0001 0 0 1 388.0073 310.4716)" >219</text>
+          			<text id="id223" transform="matrix(1.0001 0 0 1 487.247 359.5746)" >223</text>
+          			<text id="id224" transform="matrix(1.0001 0 0 1 568.3268 341.9274)" >224</text>
+          			<text id="id225" transform="matrix(1.0001 0 0 1 651.1971 322.7477)" >225</text>
+          			<text id="id226" transform="matrix(1.0001 0 0 1 735.0913 304.3341)" >226</text>
+          			<text id="id227" transform="matrix(1.0001 0 0 1 816.4265 286.4319)" >227</text>
+          			<text id="id228" transform="matrix(1.0001 0 0 1 796.6304 215.8389)" >228</text>
+          			<text id="id229" transform="matrix(1.0001 0 0 1 888.6191 196.5205)" >229</text>
+          			<text id="id230" transform="matrix(1.0001 0 0 1 924.8739 154.4688)" >230</text>
+          			<text id="id231" transform="matrix(1.0001 0 0 1 975.0052 144.2386)" >231</text>
+          			<text id="id232" transform="matrix(1.0001 0 0 1 1028.7178 132.7304)" >232</text>
+          			<text id="id233" transform="matrix(1.0001 0 0 1 1007.2329 71.6078)" >233</text>
+          			<text id="id234" transform="matrix(1.0001 0 0 1 964.0073 80.3032)" >234</text>
+          			<text id="id235" transform="matrix(1.0001 0 0 1 923.3392 88.9986)" >235</text>
+          			<text id="id236" transform="matrix(1.0001 0 0 1 882.4156 96.415)" >236</text>
+          			<text id="id237" transform="matrix(1.0001 0 0 1 841.2367 105.1104)" >237</text>
+          			<text id="id238" transform="matrix(1.0001 0 0 1 800.5681 113.2938)" >238</text>
+          			<text id="id239" transform="matrix(1.0001 0 0 1 759.1332 121.7332)" >239</text>
+          			<text id="id240" transform="matrix(1.0001 0 0 1 718.721 130.9405)" >240</text>
+        			  <text id="id241" transform="matrix(1.0001 0 0 1 677.7975 139.1239)" >241</text>
+          			<text id="id242" transform="matrix(1.0001 0 0 1 636.618 148.5863)" >242</text>
+          			<text id="id243" transform="matrix(1.0001 0 0 1 596.4618 158.0486)" >243</text>
+          			<text id="id244" transform="matrix(1.0001 0 0 1 554.7709 167.2559)" >244</text>
+          			<text id="id245" transform="matrix(1.0001 0 0 1 513.8474 175.9513)" >245</text>
+          			<text id="id246" transform="matrix(1.0001 0 0 1 473.4352 185.1576)" >246</text>
+          			<text id="id247" transform="matrix(1.0001 0 0 1 432.5117 194.3645)" >247</text>
+          			<text id="id248" transform="matrix(1.0001 0 0 1 390.5648 202.2924)" >248</text>
+          			<text id="id249" transform="matrix(1.0001 0 0 1 349.8967 211.2438)" >249</text>
+          			<text id="id250" transform="matrix(1.0001 0 0 1 310.7639 219.4272)" >250</text>
+          			<text id="id251" transform="matrix(1.0001 0 0 1 262.6787 221.985)" >251</text>
+          			<text id="id252" transform="matrix(1.0001 0 0 1 319.9716 285.6644)" >252</text>
+          			<text id="id253" transform="matrix(1.0001 0 0 1 370.3588 274.9232)" >253</text>
+          			<text id="id254" transform="matrix(1.0001 0 0 1 422.2806 263.415)" >254</text>
+          			<text id="id255" transform="matrix(1.0001 0 0 1 525.9412 274.1112)" >255</text>
+          			<text id="id256" transform="matrix(1.0001 0 0 1 563.7231 231.9583)" >256</text>
+          			<text id="id257" transform="matrix(1.0001 0 0 1 617.1793 220.7061)" >257</text>
+          			<text id="id258" transform="matrix(1.0001 0 0 1 672.1706 208.43)" >258</text>
+          			<text id="id259" transform="matrix(1.0001 0 0 1 726.65 196.6658)" >259</text>
+          			<text id="id209" transform="matrix(1.0001 0 0 1 911.5735 265.2049)" >209</text>
+          			<text id="id210" transform="matrix(1.0001 0 0 1 1004.9304 234.5161)" >210</text>
+            		<text id="id211" transform="matrix(1.0001 0 0 1 1067.8501 222.496)" >211</text>
+          			<text id="id212" transform="matrix(1.0001 0 0 1 1046.8782 168.5348)" >212</text>
+          			<text id="id213" transform="matrix(1.0001 0 0 1 992.9087 180.299)" >213</text>
+          			<text id="id214" transform="matrix(1.0001 0 0 1 944.0562 190.5283)" >214</text>
+          			<text id="id215" transform="matrix(1.0001 0 0 1 748.9022 232.2143)" >215</text>
+          			<text id="id216" transform="matrix(1.0001 0 0 1 695.446 243.9784)" >216</text>
+          			<text id="id217" transform="matrix(1.0001 0 0 1 579.0692 269.0416)" >217</text>
+          			<text id="id208" transform="matrix(1.0001 0 0 1 963.9548 273.9461)" >208</text>
+          			<text id="id260" transform="matrix(1.0001 0 0 1 1038.1819 284.1305)" >260</text>
+              	<text id="id268" transform="matrix(1.0001 0 0 1 1069.8977 253.1853)" >268</text>
+          			<text id="id268" transform="matrix(1.0001 0 0 1 1108.7742 274.1563)" >268</text>
+          			<text id="id269" transform="matrix(1.0001 0 0 1 1124.8881 307.9138)" >269</text>
+          			<text id="id270" transform="matrix(1.0001 0 0 1 1160.696 282.0842)" >270</text>
+          			<text id="id271" transform="matrix(1.0001 0 0 1 1268.8881 281.0612)" >271</text>
+          			<text id="id272" transform="matrix(1.0001 0 0 1 1327.9716 327.6064)" >272</text>
+          		  <text transform="matrix(1.0001 0 0 1 1301.3707 334.7669)" >WC</text>
+          		  <text transform="matrix(1.0001 0 0 1 1323.8793 363.9223)" >WC</text>
+          		  <text transform="matrix(1.0001 0 0 1 1341.272 410.4665)" >WC</text>
+          		  <text transform="matrix(1.0001 0 0 1 174.9487 323.5147)" >WC</text>
+          		  <text transform="matrix(1.0001 0 0 1 217.9184 314.3074)" >WC</text>
+          			<text id="id262" transform="matrix(1.0001 0 0 1 954.7991 426.0678)" >262</text>
+          			<text id="id263" transform="matrix(1.0001 0 0 1 1022.6563 470.8368)" >263</text>
+          			<text id="id267" transform="matrix(1.0001 0 0 1 1084.9878 395.6335)" >267</text>
+          			<text id="id266" transform="matrix(1.0001 0 0 1 1105.4489 460.3373)" >266</text>
+          			<text id="id265" transform="matrix(1.0001 0 0 1 1175.2753 444.48)" >265</text>
           			<text id="id264" transform="matrix(1.0001 0 0 1 1147.1407 385.4048)" >264</text>
-          			<text id="id261_1_" transform="matrix(1.0001 0 0 1 1057.3641 319.678)" >261</text>
-          			<text id="id204_1_" transform="matrix(1.0001 0 0 1 410.515 561.0996)" >204</text>
+          			<text id="id261" transform="matrix(1.0001 0 0 1 1057.3641 319.678)" >261</text>
+          			<text id="id204" transform="matrix(1.0001 0 0 1 410.515 561.0996)" >204</text>
           </g>
       </g>
     )

@@ -20,26 +20,6 @@ module.exports = React.createClass({
   },
   _updateMaps: function() {
     var self= this;
-    // $("polygon, path").mouseenter(function(e) {
-    //   $(this).addClass('active');
-    // });
-    // $("polygon, path").click(function(e) {
-    //     var id = $(this).attr("id").slice(4);
-    //     self._selectZone(id);
-    // });
-    // $("polygon, path").mouseleave(function() {
-    //     $(this).removeClass('active');
-    // });
-    // $('text').mouseenter(function() {
-    //   var id = $(this).parents().attr("id").slice(2);
-    //   if (id) {
-    //     $("polygon#zone" + id + ", path#zone" + id).addClass('active');
-    //   }
-    // });
-    // $('text').mouseleave(function() {
-    //   var id = $(this).parents().attr("id").slice(2);
-    //   $("polygon#zone" + id+", path#zone" + id).removeClass('active');
-    // });
     var $pep = $('#drag').pep();
   },
   _selectZone: function(zone) {

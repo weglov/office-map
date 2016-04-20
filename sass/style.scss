@@ -23,13 +23,21 @@ polygon, path {
 }
 #float_way {
   opacity: 1;
+  &>g {
+    opacity: 0;
+    transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+    &.active {
+      opacity: 1;
+    }
+  }
+  polygon {
+    fill: $orange;
+  }
 }
 polygon.active, path.active {
   fill: $orange;
 }
-#float_way polygon {
-  fill: $orange;
-}
+
 polygon.active_zone, path.active_zone {
   fill: $orange;
 }
