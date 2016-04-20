@@ -12,4 +12,4 @@ var Map = React.createClass({
 });
 
 var map = React.createElement(Map, {});
-ReactDOM.render(map, document.querySelector('.container'));
+ReactDOM.render(map, document.getElementById('office__map'));

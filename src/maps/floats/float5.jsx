@@ -140,45 +140,45 @@ module.exports = React.createClass({
         	</g>
         </g>
         <g id="float5_text" clasName="text">
-        			<text id="id547" transform="matrix(1 0 0 1 342.8336 476.2086)" >537</text>
-        			<text id="id544" transform="matrix(1 0 0 1 513.3752 351.3752)" >533</text>
-        			<text id="id541" transform="matrix(1 0 0 1 622.8752 328.8752)" >531</text>
-        			<text id="id541" transform="matrix(1 0 0 1 574.3752 337.8752)" >532</text>
-        			<text id="id539" transform="matrix(1 0 0 1 705.0002 310.1252)" >529</text>
-        			<text id="id537" transform="matrix(1 0 0 1 766.8752 297.3752)" >528</text>
-        			<text id="id534" transform="matrix(1 0 0 1 844.1252 280.1252)" >525</text>
-        			<text id="id533" transform="matrix(1 0 0 1 934.1252 300.0002)" >523</text>
-        			<text id="id520" transform="matrix(1 0 0 1 1248.2919 288.5002)" >520</text>
-        			<text id="id522" transform="matrix(1 0 0 1 1060.7919 276.5002)" >522</text>
-        			<text id="id524" transform="matrix(1 0 0 1 1055.2919 329.5002)" >524</text>
-              <text id="id520" transform="matrix(1 0 0 1 1241.6252 84.0002)" >519</text>
-        			<text id="id519" transform="matrix(1 0 0 1 1147.8752 100.8752)" >518</text>
-        			<text id="id518" transform="matrix(1 0 0 1 1055.6252 121.1252)" >517</text>
-        			<text id="id518" transform="matrix(1 0 0 1 985.6252 114.1252)" >515</text>
-        			<text id="id518_3_" transform="matrix(1 0 0 1 1003.6252 153.6252)" >516</text>
-        			<text id="id513" transform="matrix(1 0 0 1 859.5002 141.3752)" >513</text>
-        			<text id="id514" transform="matrix(1 0 0 1 884.2502 188.6252)" >514</text>
-        			<text id="id511" transform="matrix(1 0 0 1 779.6252 163.1252)" >511</text>
-        			<text id="id509" transform="matrix(1 0 0 1 696.3752 227.5002)" >509</text>
-        			<text id="id510" transform="matrix(1 0 0 1 661.3752 182.2502)" >510</text>
-        			<text id="id508" transform="matrix(1 0 0 1 611.6252 246.3752)" >508</text>
-        			<text id="id506" transform="matrix(1 0 0 1 540.7502 213.0002)" >506</text>
-        			<text id="id505" transform="matrix(1 0 0 1 485.6252 265.8752)" >505</text>
-        			<text id="id504" transform="matrix(1 0 0 1 401.2502 269.2502)">504</text>
-        			<text id="id503" transform="matrix(1 0 0 1 284.2502 290.6252)" >503</text>
-        			<text id="id502" transform="matrix(1 0 0 1 168.7502 315.3752)" >502</text>
-        			<text id="id501" transform="matrix(1 0 0 1 84.7502 329.6252)" >501</text>
-        			<text id="id555" transform="matrix(1 0 0 1 135.7502 510.7502)" >538</text>
-        			<text id="id555" transform="matrix(1 0 0 1 118.2502 463.2502)" >539</text>
-        			<text id="id555_3_" transform="matrix(1 0 0 1 100.7502 429.2502)" >540</text>
-        			<text id="id555_4_" transform="matrix(1 0 0 1 193.7502 407.7502)" >541</text>
-        			<text id="id555_5_" transform="matrix(1 0 0 1 296.7502 410.2502)" >536</text>
-        			<text id="id512" transform="matrix(1 0 0 1 803.2502 210.3752)" >512</text>
-        			<text id="id535" transform="matrix(1 0 0 1 847.1252 327.7502)" >526</text>
-        			<text id="id536" transform="matrix(1 0 0 1 865.1252 367.5002)" >527</text>
-        			<text id="id540" transform="matrix(1 0 0 1 720.7502 378.0002)" >530</text>
-        			<text id="id535_3_" transform="matrix(1 0 0 1 600.3752 402.0002)" >535</text>
-              <text id="id534" transform="matrix(1 0 0 1 497.2502 418.1252)" >534</text>
+              <text id="id547" transform="matrix(1 0 0 1 342.8336 476.2086)">537</text>
+              <text id="id544" transform="matrix(1 0 0 1 513.3752 351.3752)">533</text>
+              <text id="id541" transform="matrix(1 0 0 1 622.8752 328.8752)">531</text>
+              <text id="id541" transform="matrix(1 0 0 1 574.3752 337.8752)">532</text>
+              <text id="id539" transform="matrix(1 0 0 1 705.0002 310.1252)">529</text>
+              <text id="id537" transform="matrix(1 0 0 1 766.8752 297.3752)">528</text>
+              <text id="id534" transform="matrix(1 0 0 1 844.1252 280.1252)">525</text>
+              <text id="id533" transform="matrix(1 0 0 1 934.1252 300.0002)">523</text>
+              <text id="id520" transform="matrix(1 0 0 1 1248.2919 288.5002)">520</text>
+              <text id="id522" transform="matrix(1 0 0 1 1060.7919 276.5002)">522</text>
+              <text id="id524" transform="matrix(1 0 0 1 1055.2919 329.5002)">524</text>
+              <text id="id520" transform="matrix(1 0 0 1 1241.6252 84.0002)">519</text>
+              <text id="id519" transform="matrix(1 0 0 1 1147.8752 100.8752)">518</text>
+              <text id="id518" transform="matrix(1 0 0 1 1055.6252 121.1252)">517</text>
+              <text id="id518" transform="matrix(1 0 0 1 985.6252 114.1252)">515</text>
+              <text id="id518" transform="matrix(1 0 0 1 1003.6252 153.6252)">516</text>
+              <text id="id513" transform="matrix(1 0 0 1 859.5002 141.3752)">513</text>
+              <text id="id514" transform="matrix(1 0 0 1 884.2502 188.6252)">514</text>
+              <text id="id511" transform="matrix(1 0 0 1 779.6252 163.1252)">511</text>
+              <text id="id509" transform="matrix(1 0 0 1 696.3752 227.5002)">509</text>
+              <text id="id510" transform="matrix(1 0 0 1 661.3752 182.2502)">510</text>
+              <text id="id508" transform="matrix(1 0 0 1 611.6252 246.3752)">508</text>
+              <text id="id506" transform="matrix(1 0 0 1 540.7502 213.0002)">506</text>
+              <text id="id505" transform="matrix(1 0 0 1 485.6252 265.8752)">505</text>
+              <text id="id504" transform="matrix(1 0 0 1 401.2502 269.2502)">504</text>
+              <text id="id503" transform="matrix(1 0 0 1 284.2502 290.6252)">503</text>
+              <text id="id502" transform="matrix(1 0 0 1 168.7502 315.3752)">502</text>
+              <text id="id501" transform="matrix(1 0 0 1 84.7502 329.6252)">501</text>
+              <text id="id555" transform="matrix(1 0 0 1 135.7502 510.7502)">538</text>
+              <text id="id555" transform="matrix(1 0 0 1 118.2502 463.2502)">539</text>
+              <text id="id555" transform="matrix(1 0 0 1 100.7502 429.2502)">540</text>
+              <text id="id555" transform="matrix(1 0 0 1 193.7502 407.7502)">541</text>
+              <text id="id555" transform="matrix(1 0 0 1 296.7502 410.2502)">536</text>
+              <text id="id512" transform="matrix(1 0 0 1 803.2502 210.3752)">512</text>
+              <text id="id535" transform="matrix(1 0 0 1 847.1252 327.7502)">526</text>
+              <text id="id536" transform="matrix(1 0 0 1 865.1252 367.5002)">527</text>
+              <text id="id540" transform="matrix(1 0 0 1 720.7502 378.0002)">530</text>
+              <text id="id535" transform="matrix(1 0 0 1 600.3752 402.0002)">535</text>
+              <text id="id534" transform="matrix(1 0 0 1 497.2502 418.1252)">534</text>
         	</g>
       </g>
     )

@@ -10,7 +10,8 @@ module.exports = React.createClass({
       key: 'name',
       keys: ['name', 'zone'],
       active: false,
-      float: 0
+      float: 0,
+      index: 0
     }
   },
   componentDidMount: function() {
@@ -36,9 +37,6 @@ module.exports = React.createClass({
   _activeZone: function(e, float) {
     return this.props.activeZone(e, float);
   },
-  _navigation: function() {
-    
-  },
   _clear: function() {
     $('.react-search__input').val('').removeClass('react-search__active');
     $("polygon.active_zone, path.active_zone").removeClass('active_zone');
@@ -53,7 +51,11 @@ module.exports = React.createClass({
       float: zone
     });
     float = zone.charAt(0).match(/[1-6]/) ? zone.charAt(0) : null
-    this._activeZone(zone, float);
+    if (!float) {
+      alert('Ошибка: вас еще не добавили на карту ')
+    } else {
+      this._activeZone(zone, float);
+    }
   },
   render: function() {
     return (
