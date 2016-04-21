@@ -10,6 +10,9 @@ $black:  #272A2C;
 #office__map {
   position: relative;
   font-family: 'Roboto', sans-serif;
+  a {
+    color: $black;
+  }
 .black {
   color: black
 }

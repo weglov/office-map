@@ -26,6 +26,21 @@ module.exports = React.createClass({
   _selectZone: function(zone) {
     $("polygon.active_zone, path.active_zone").removeClass('active_zone');
     $("polygon#zone" + zone +", path" + zone).addClass('active_zone');
+    var ids = parseInt(zone)
+    if (ids > 232 && ids < 252) {
+      $('#way_9_').addClass('active');
+    } else if (ids > 200 && ids < 206 || ids >= 221 && ids <= 222) {
+      $('#way_3_').addClass('active');
+    } else if (ids >= 215 && ids <= 220 || ids >= 223 && ids <= 227) {
+      $('#way_6_').addClass('active');
+    } else if (ids >= 332 && ids <= 337) {
+      $('#way_332-337').addClass('active');
+    } else if (ids >= 332 && ids <= 337) {
+      $('#way_332-337').addClass('active');
+    }
+    else {
+      $('#way_'+ids).addClass('active');
+    }
   },
   componentDidMount: function() {
     this._updateMaps();
