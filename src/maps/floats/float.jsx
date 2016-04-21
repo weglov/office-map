@@ -26,9 +26,6 @@ module.exports = React.createClass({
       if (map == 5) {
         Float = <Float5/>
       }
-      // else if (map == 4) {
-      //   Float = <Float4/>;
-      // }
       else if (map == 3) {
         Float = <Float3/>;
       }

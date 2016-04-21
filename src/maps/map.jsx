@@ -9,8 +9,9 @@ var Api = require('../data/api');
 
 module.exports = React.createClass({
   getInitialState: function() {
+    console.log(window.zone);
     return {
-      float: 3,
+      float: 1,
       active: true,
       zone: 0,
       elem: [],

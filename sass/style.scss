@@ -3,15 +3,18 @@ $orange: rgba(245, 132, 31, 1);
 $grey: #8D9AA3;
 $black:  #272A2C;
 
-
-body {
-  font-family: 'Roboto', sans-serif;
+.bitrixsite {
+  position: relative;
+  padding: 100px 50px 50px 200px;
 }
+#office__map {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
 .black {
   color: black
 }
 #float5 {
-  background: url('../src/image/office.png') no-repeat;
+  background: url('src/image/office.png') no-repeat;
   width: 1000px;
   height: 500px;
   display: block;
@@ -50,6 +53,8 @@ text {
   background: #D4D5D7;
   overflow: hidden;
 height: 100%;
+min-height: 690px;
+    max-height: 800px;
   #zoom {
     transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
   }
@@ -81,6 +86,7 @@ height: 100%;
 }
 svg {
   height: 100%;
+  min-height: 690px;
     width: 100%;
 }
 .floats {
@@ -137,7 +143,7 @@ svg {
       background-size: 20px 20px;
 background-repeat: no-repeat;
 background-position: center center;
-    background-image:url(../src/image/interface.png);
+    background-image:url(src/image/interface.png);
     }
   }
   &__clear {
@@ -158,14 +164,16 @@ background-position: center center;
     }
   }
 }
-.react-search {
+.search {
+  .react-search {
   margin-left: 40px;
   &__input {
-    padding: 10px;
-    width: 380px;
-    border-radius: 0 4px 4px 0;
-    border: 1px solid $grey;
-    outline: none;
+        padding: 7px;
+        width: 315px;
+        border-radius: 0 4px 4px 0;
+        border: 1px solid #8D9AA3 !important;
+        outline: none;
+        box-shadow: none !important;
   }
   &__menu-items {
     background: #fff;
@@ -205,6 +213,7 @@ background-position: center center;
       }
   }
 }
+}
 
 
 
@@ -217,7 +226,7 @@ background-position: center center;
   left: -99em;
   opacity: 0;
   padding: 8px 21px;
-  position: fixed;
+  position: absolute;
   pointer-events: none;
   transition: opacity 0.3s ease-out , margin-top 0.3s ease-out, margin-left 0.3s ease-out;
   top: -99em;
@@ -243,6 +252,8 @@ background-position: center center;
   }
   &.true {
     opacity: 1;
+    // left: 20px !important;
+    // top: 80px !important;
     visibility: visible;
     &.false {
       opacity: 0;
@@ -297,7 +308,7 @@ background-position: center center;
 }
 
 
-
+}
 
 
 

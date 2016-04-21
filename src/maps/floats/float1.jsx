@@ -113,7 +113,7 @@ module.exports = React.createClass({
           			</g>
           		</g>
           	</g>
-          	<g id="way_115">
+          	<g id="way_118">
           		<g>
           			<polyline fill="none" stroke="#F5841F" strokeWidth="5" strokeMiterlimit="10" points="653.2,697.3 630.7,650.3 514.2,676.3
           				452.5,544.3 673.4,494.9 776.9,510.9 914.9,480.2 866.8,379.6 806.8,393.6 			"/>
@@ -156,9 +156,9 @@ module.exports = React.createClass({
         			<text id="id109" transform="matrix(1.0005 0 0 1 483.1013 213.8725)">109</text>
         			<text id="id107" transform="matrix(1.0005 0 0 1 263.948 227.6483)">107</text>
         			<text id="id108" transform="matrix(1.0005 0 0 1 295.9944 299.2836)">108</text>
-        			<text id="id115" transform="matrix(1.0005 0 0 1 730.5101 403.2924)">115</text>
-        			<text id="id116" transform="matrix(1.0005 0 0 1 801.1486 386.4168)">116</text>
-        			<text id="id114" transform="matrix(1.0005 0 0 1 821.1337 422.9233)">114</text>
+        			<text id="id118" transform="matrix(1.0005 0 0 1 730.5101 403.2924)">118</text>
+        			<text id="id116" transform="matrix(1.0005 0 0 1 801.1486 386.4168)">117</text>
+        			<text id="id114" transform="matrix(1.0005 0 0 1 821.1337 422.9233)">116</text>
         			<text id="id115" transform="matrix(1.0005 0 0 1 836.2963 456.6749)">115</text>
         			<text id="id121" transform="matrix(1.0005 0 0 1 925.5423 436.0107)">121</text>
         			<text id="id125" transform="matrix(1.0005 0 0 1 1010.9976 414.3131)">125</text>

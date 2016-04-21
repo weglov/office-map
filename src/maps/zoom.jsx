@@ -39,8 +39,24 @@ module.exports = React.createClass({
             })
     }
   },
+  _scrollbar: function() {
+    var scrollWidth = window.innerWidth - document.body.clientWidth;
+    return scrollWidth
+  },
   componentDidMount: function() {
     var self = this;
+    var scroll = this._scrollbar();
+    $('#office__map').hover(function() {
+      $('body').css({
+        'overflow': 'hidden',
+        'margin-right': scroll
+      });
+    },function() {
+      $('body').css({
+        'overflow': 'auto',
+        'margin-right': "0"
+      })
+    });
     $('#map').on('mousewheel', function(event) {
     if (event.deltaY == 1) {
       self.zoomIn()

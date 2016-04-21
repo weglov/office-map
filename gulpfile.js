@@ -8,6 +8,7 @@ var notifier = require('node-notifier');
 var server = require('gulp-server-livereload');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
+var uglify = require('gulp-uglifyjs');
 var watch = require('gulp-watch');
 
 var notify = function(error) {
@@ -55,6 +56,19 @@ gulp.task('build', function() {
   bundle()
 });
 
+
+gulp.task('uglify', function() {
+  gulp.src('main.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('bundle'))
+});
+gulp.task('vendor', function() {
+  gulp.src('src/data/*.js')
+    .pipe(concat('vendor.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('bundle'))
+});
+
 gulp.task('serve', function(done) {
   gulp.src('')
     .pipe(server({
@@ -79,6 +93,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('prod', ['build-prod', 'sass']);
 gulp.task('default', ['build', 'serve', 'sass', 'watch']);
 
 gulp.task('watch', function () {
