@@ -10,6 +10,9 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglifyjs');
 var watch = require('gulp-watch');
+var autoprefixer = require('gulp-autoprefixer');
+var csso = require('gulp-csso');
+
 
 var notify = function(error) {
   var message = 'In: ';
@@ -89,7 +92,16 @@ gulp.task('serve', function(done) {
 gulp.task('sass', function () {
   gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+			browsers: ['> 1%', 'IE 7'],
+			cascade: false
+		}))
     .pipe(concat('style.css'))
+    .pipe(csso({
+            restructure: false,
+            sourceMap: false,
+            debug: false
+        }))
     .pipe(gulp.dest('./'));
 });
 

@@ -1,10 +1,10 @@
 var Fetch = require('whatwg-fetch');
 var Fetch = require('fetch-ie8');
-var rootUrl = 'http://office.ren-tv.com/export/';
+var rootUrl = 'http://office.ren-tv.com/company/officemap/zonelist.php';
 
 module.exports = {
-  get: function(url) {
-    return fetch(rootUrl + url, {
+  get: function(e) {
+    return fetch(rootUrl, {
       credentials: ''
     })
     .then(function(response) {

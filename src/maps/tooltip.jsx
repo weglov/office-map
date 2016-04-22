@@ -81,6 +81,7 @@ module.exports = React.createClass({
   componentDidUpdate: function() {
     this._hover();
     this._hover_text();
+    $('.tooltip').removeClass('tooltip__top');
     $("polygon#zone" + this.state.zone + ", path#zone" + this.state.zone).mousemove(function(e) {
       x = e.offsetX==undefined?e.layerX:e.offsetX;
       y = e.offsetY==undefined?e.layerY:e.offsetY;
@@ -88,11 +89,6 @@ module.exports = React.createClass({
       var height = $('.tooltip').height();
       var currentY = y - height - 20;
       var currentX = x - width/2;
-      if (y - height < 0) {
-        currentY = y;
-        $('.tooltip').addClass('tooltip__top');
-        currentX = x;
-      }
       if (currentX == 0 || currentY == 0) {
         currentY = "40px";
         currentX = "20px";
@@ -105,15 +101,19 @@ module.exports = React.createClass({
   },
   render: function() {
     var active = false;
+    var many = ' tooltip__mini';
     if (this.state.newelem.length) {
       active = true;
+      if (this.state.newelem.length > 10) {
+        many = ' tooltip__big';
+      }
       var zone = this.state.newelem[0].zone;
       var _tooltip = this.state.newelem.map(function(elem) {
         return <div className="tooltip__name"  key={elem.id}>{elem.name}</div>
       });
     }
     return (
-      <div className={"tooltip " + active}>
+      <div className={"tooltip " + active + many}>
         <span className="tooltip__room">{zone}</span>
         {_tooltip}
       </div>

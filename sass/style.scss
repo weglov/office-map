@@ -7,6 +7,9 @@ $black:  #272A2C;
   position: relative;
   padding: 100px 50px 50px 200px;
 }
+#content, #content #workarea {
+  overflow: visible !important;
+}
 #office__map {
   position: relative;
   font-family: 'Roboto', sans-serif;
@@ -240,22 +243,10 @@ background-position: center center;
   box-sizing: border-box;
   width: 150px;
   padding: 5px;
-  &__top {
-    &:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 8px 4px 0 4px;
-      border-color: rgba(255, 255, 255, 0.77) transparent transparent transparent;
-      position: absolute;
-      top: -8px;
-      margin-left: -4px;
-      left: 50%;
-    }
-  }
   &.true {
     opacity: 1;
+    z-index: 2000;
+        box-shadow: 1px 6px 17px -6px rgba(0, 0, 0, 0.25);
     // left: 20px !important;
     // top: 80px !important;
     visibility: visible;
@@ -290,6 +281,29 @@ background-position: center center;
     bottom: -8px;
     margin-left: -4px;
     left: 50%;
+  }
+  &__top {
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 8px;
+      border-color: transparent transparent transparent rgba(255, 255, 255, 0.77);
+      position: absolute;
+      bottom: 80%;
+      margin-left: -4px;
+      right: -8px;
+      left: initial;
+    }
+  }
+  &__big {
+    width: 300px;
+    .tooltip__name {
+      display: inline-block;
+      padding: 3px 0;
+      width: 145px;
+    }
   }
   &.multi-line {
     display: block;
