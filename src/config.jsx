@@ -1,7 +1,7 @@
 module.exports = {
   container: '#map',
   float6: {
-    img:'./src/image/office6.png',
+    img:'./src/image/office6.png?1',
     height: '600',
     width: '1440'
   },
@@ -11,7 +11,7 @@ module.exports = {
     width: '1440'
   },
   float4: {
-    img:'./src/image/office6.png',
+    img:'./src/image/office4.png',
     height: '600',
     width: '1440'
   },

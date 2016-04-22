@@ -2,6 +2,7 @@ var React = require('react');
 var Config = require('../../config');
 var Float5 = require('./float5');
 var Float6 = require('./float6');
+var Float4 = require('./float4');
 var Float3 = require('./float3');
 var Float2 = require('./float2');
 var Float1 = require('./float1');
@@ -29,14 +30,17 @@ module.exports = React.createClass({
       else if (map == 3) {
         Float = <Float3/>;
       }
+      else if (map == 6) {
+        Float = <Float6/>;
+      }
       else if (map == 2) {
         Float = <Float2/>;
       }
-      else if (map == 1) {
-        Float = <Float1/>;
+      else if (map == 4) {
+        Float = <Float4/>;
       }
       else {
-          Float = <Float6/>;
+        Float = <Float1/>;
       }
     return (
         <g id="drag" ref="drag" className={'float__' + map}>

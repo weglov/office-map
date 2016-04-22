@@ -50,7 +50,7 @@ module.exports = React.createClass({
               <text id="id616" transform="matrix(1 0 0 1 563.6252 450.0002)" >616</text>
               <text id="id617" transform="matrix(1 0 0 1 852.7502 377.2502)" >617</text>
               <text id="id611" transform="matrix(1 0 0 1 690.0002 321.0002)" >611</text>
-              <text id="id610_3_" transform="matrix(1 0 0 1 864.3752 280.5002)" >610</text>
+              <text id="id610" transform="matrix(1 0 0 1 864.3752 280.5002)" >610</text>
               <text id="id608" transform="matrix(1 0 0 1 918.3752 228.0002)" >608</text>
               <text id="id609" transform="matrix(1 0 0 1 951.0002 295.5002)" >609</text>
               <text id="id610" transform="matrix(1 0 0 1 1021.8752 242.2502)" >610</text>
