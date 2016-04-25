@@ -1,32 +1,32 @@
 module.exports = {
   container: '#map',
   float6: {
-    img:'./src/image/office6.png?1',
+    img:'http://office.ren-tv.com/company/officemap/src/image/office6.png?2',
     height: '600',
     width: '1440'
   },
   float5: {
-    img:'./src/image/office5.jpg',
+    img:'http://office.ren-tv.com/company/officemap/src/image/office5.jpg?2',
     height: '600',
     width: '1440'
   },
   float4: {
-    img:'./src/image/office4.png',
+    img:'http://office.ren-tv.com/company/officemap/src/image/office4.png?2',
     height: '600',
     width: '1440'
   },
   float3: {
-    img:'./src/image/office3.png',
+    img:'http://office.ren-tv.com/company/officemap/src/image/office3.png?2',
     height: '1062',
     width: '1440'
   },
   float2: {
-    img:'./src/image/office2.png',
+    img:'http://office.ren-tv.com/company/officemap/src/image/office2.png?2',
     height: '668',
     width: '1440'
   },
   float1: {
-    img:'./src/image/office1.png',
+    img:'http://office.ren-tv.com/company/officemap/src/image/office1.png?2',
     height: '861',
     width: '1440'
   },

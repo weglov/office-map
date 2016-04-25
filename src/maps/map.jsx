@@ -9,11 +9,31 @@ var Api = require('../data/api');
 
 module.exports = React.createClass({
   getInitialState: function() {
-    console.log(window.zone);
+    var getQueryParams = function (qs) {
+      qs = qs.split('+').join(' ');
+      var params = {},
+          tokens,
+          re = /[?&]?([^=]+)=([^&]*)/g;
+      while (tokens = re.exec(qs)) {
+          params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+      }
+      return params;
+    }
+    var query = getQueryParams(document.location.search);
+    var zone = query.zone ? query.zone : '';
+    var float = zone.charAt(0) ? zone.charAt(0) : 1;
+    if (zone == "undefined") {
+      zone = '';
+      float = 1;
+    }
+    if (window.MapZone) {
+      var zone = window.MapZone ? window.MapZone : 0;
+      var float = ('' + zone).charAt(0);
+    }
     return {
-      float: 1,
+      float: float,
       active: true,
-      zone: 0,
+      zone: zone,
       elem: [],
       offsetX: 0,
       offsetY: 0
@@ -43,6 +63,7 @@ module.exports = React.createClass({
     }
   },
   componentDidMount: function() {
+    $('.react-search__input').val(this.state.zone);
     this._updateMaps();
     var self = this;
     Api.get('zonelist/')
@@ -90,6 +111,12 @@ module.exports = React.createClass({
   },
   render: function() {
     var float_size = 'float' + this.state.float;
+    var locat = location.href;
+      if (locat.indexOf("personal/user/") !== -1) {
+        document.getElementById('office__map').onclick = function() {
+        location.href = location.origin + '/company/officemap/' + '?zone=' + window.MapZone
+      }
+    }
     return (
       <div id="map" ref="map" className="map">
         <Zoom />

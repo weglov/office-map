@@ -11,7 +11,7 @@ module.exports = React.createClass({
         	<polygon id="zone609" fill="#F5841F" points="945.1,279.4 983.1,271.4 994.5,294 975.5,297.7 975.1,312 961.4,315.1
         		961.8,302.4 960.5,301.1 956.5,301.9 	"/>
         	<polygon id="zone602" fill="#F5841F" points="367.7,231.7 770.3,145 801.3,209.7 400.3,297 	"/>
-        	<polygon id="zone610" fill="#F5841F" points="997.4,292.6 952.9,201.6 1081,174.8 1124.8,266.3 1099,271.8 1098.7,285.2
+        	<polygon id="zone607" fill="#F5841F" points="997.4,292.6 952.9,201.6 1081,174.8 1124.8,266.3 1099,271.8 1098.7,285.2
         		1085.7,288 1086.3,275.7 1084.8,274.2 	"/>
         	<polygon id="zone604" fill="#F5841F" points="901,185.8 870.8,123.3 926,111.3 956.3,173.8 936.3,178 936.3,191.8
         		922.8,194.5 923,183 920.8,180.5 	"/>
@@ -53,7 +53,7 @@ module.exports = React.createClass({
               <text id="id610" transform="matrix(1 0 0 1 864.3752 280.5002)" >610</text>
               <text id="id608" transform="matrix(1 0 0 1 918.3752 228.0002)" >608</text>
               <text id="id609" transform="matrix(1 0 0 1 951.0002 295.5002)" >609</text>
-              <text id="id610" transform="matrix(1 0 0 1 1021.8752 242.2502)" >610</text>
+              <text id="id607" transform="matrix(1 0 0 1 1021.8752 242.2502)" >607</text>
               <text id="id618" transform="matrix(1 0 0 1 1108.1252 327.0002)" >618</text>
               <text id="id601" transform="matrix(1 0 0 1 267.0002 320.6252)" >601</text>
               <text id="id602" transform="matrix(1 0 0 1 577.1252 241.8752)" >602</text>

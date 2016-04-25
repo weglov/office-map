@@ -1,361 +1,443 @@
 @import "norm.scss";
 $orange: rgba(245, 132, 31, 1);
 $grey: #8D9AA3;
-$black:  #272A2C;
-
+$black: #272A2C;
 .bitrixsite {
-  position: relative;
-  padding: 100px 50px 50px 200px;
+    position: relative;
+    padding: 100px 50px 50px 200px;
 }
-#content, #content #workarea {
-  overflow: visible !important;
+
+#content,
+#content #workarea {
+    overflow: visible !important;
+    overflow-x: hidden !important;
 }
+
 #office__map {
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  a {
-    color: $black;
-  }
-.black {
-  color: black
-}
-#float5 {
-  background: url('src/image/office.png') no-repeat;
-  width: 1000px;
-  height: 500px;
-  display: block;
-}
-polygon, path {
-  cursor: pointer;
-  fill: transparent;
-  z-index: 200;
-}
-#float_way {
-  opacity: 1;
-  &>g {
-    opacity: 0;
-    transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
-    &.active {
-      opacity: 1;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    a {
+        color: $black;
     }
-  }
-  polygon {
-    fill: $orange;
-  }
-}
-polygon.active, path.active {
-  fill: $orange;
-}
-
-polygon.active_zone, path.active_zone {
-  fill: $orange;
-}
-text {
-  cursor: pointer;
-  font-size: 14px;
-  text-align: center;
-}
-#map {
-  background: #D4D5D7;
-  overflow: hidden;
-height: 100%;
-min-height: 690px;
-    max-height: 800px;
-  #zoom {
-    transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-}
-.controls {
-  position: absolute;
-  top:0;
-  z-index: 200;
-  right: 0;
-  margin: 0px 10px;
-  &__zoom {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    height: 40px;
-    width: 40px;
-    border-radius: 4px;
-    background: $grey;
-    color: #fff;
-    font-size: 28px;
-    text-align: center;
-    line-height: 40px;
-    margin: 20px 10px;
-    cursor: pointer;
-    display: block;
-    &:hover {
-      background: $black;
+    .black {
+        color: black
     }
-  }
-}
-svg {
-  height: 100%;
-  min-height: 690px;
-    width: 100%;
-}
-.floats {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  &__item {
-    display: inline-block;
-    vertical-align: bottom;
-    padding: 10px 20px;
-    background: $grey;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px 5px 0px 0;
-    color: #fff;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    &--active {
-      font-weight: 500;
-      background: $orange;
-      padding-top: 20px;
+    #float5 {
+        background: url('src/image/office.png') no-repeat;
+        width: 1000px;
+        height: 500px;
+        display: block;
     }
-    &--disable {
-      cursor: not-allowed;
-    }
-  }
-}
-.search {
-  position: absolute;
-  top: 0;
-  z-index: 200;
-  left: 0;
-  margin: 20px 0 0 20px;
-  outline: none;
-  &__icon {
-    position: absolute;
-    border-radius: 4px 0 0 4px;
-    height: 41px;
-    width: 40px;
-    top: 0;
-    left: 0;
-    background: $grey;
-    &--icon {
-      height: 41px;
-      width: 40px;
-      border-radius: 4px 0 0 4px;
-      background-size: 20px 20px;
-background-repeat: no-repeat;
-background-position: center center;
-    background-image:url(src/image/interface.png);
-    }
-  }
-  &__clear {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 10px;
-    display: none;
-    &.active{
-    display: block;
-    color: #fff;
-    cursor: pointer;
-      .search__float {
-        padding: 0 10px;
-        vertical-align: initial;
-        font-weight: 500;
-      }
-    }
-  }
-}
-.search {
-  .react-search {
-  margin-left: 40px;
-  &__input {
-        padding: 7px;
-        width: 315px;
-        border-radius: 0 4px 4px 0;
-        border: 1px solid #8D9AA3 !important;
-        outline: none;
-        box-shadow: none !important;
-  }
-  &__menu-items {
-    background: #fff;
-    margin: -1px 0px 0;
-    padding: 0px;
-    box-sizing: border-box;
-    overflow: hidden;
-    max-height: 274px;
-    z-index: 100;
-    border-radius: 0 0 4px 4px;
-    border: 1px solid $grey;
-    border-top: none;
-  }
-  &__menu--hidden {
-    display: none;
-  }
-  &__active {
-        border: 1px solid $orange;
-        background: $orange;
-        color: #fff;
-  }
-  &__menu-item {
-      padding: 10px 10px;
-      &:hover, &.selected {
-        background: $orange;
+    polygon,
+    path {
         cursor: pointer;
-        a {
-          color: #fff;
-          &:nth-child(2) {
-            color: #fff;
-          }
-        }
-      }
-      a:nth-child(2) {
-        float: right;
-        color: $grey;
-        font-weight: 500;
-      }
-  }
-}
-}
-
-
-
-
-
-.tooltip {
-  border-radius: 3px;
-  display: inline-block;
-  font-size: 13px;
-  left: -99em;
-  opacity: 0;
-  padding: 8px 21px;
-  position: absolute;
-  pointer-events: none;
-  transition: opacity 0.3s ease-out , margin-top 0.3s ease-out, margin-left 0.3s ease-out;
-  top: -99em;
-  visibility: visible;
-  z-index: 99;
-  background: rgba(255, 255, 255, 0.77);
-  box-sizing: border-box;
-  width: 150px;
-  padding: 5px;
-  &.true {
-    opacity: 1;
-    z-index: 2000;
-        box-shadow: 1px 6px 17px -6px rgba(0, 0, 0, 0.25);
-    // left: 20px !important;
-    // top: 80px !important;
-    visibility: visible;
-    &.false {
-      opacity: 0;
-      visibility: hidden;
+        fill: transparent;
+        z-index: 200;
     }
-  }
-      &__room {
-        background: $orange;
-        display: block;
-        margin: -5px -5px 0px;
-        padding: 5px;
-        color: #fff;
+    #float_way {
+        opacity: 1;
+        &>g {
+            opacity: 0;
+            transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+            &.active {
+                opacity: 1;
+            }
+        }
+        polygon {
+            fill: $orange;
+        }
+    }
+    polygon.active,
+    path.active {
+        fill: $orange;
+    }
+    polygon.active_zone,
+    path.active_zone {
+        fill: $orange;
+    }
+    text {
+        cursor: pointer;
+        font-size: 14px;
         text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 5px;
-      }
-      &__name {
-        display: block;
-        padding: 3px 0;
-      }
+    }
+    #map {
+        background: #D4D5D7;
+        overflow: hidden;
+        height: 100%;
+        min-height: 690px;
+        max-height: 800px;
+        #zoom {
+            transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+    .controls {
+        position: absolute;
+        top: 0;
+        z-index: 200;
+        right: 0;
+        margin: 0px 10px;
+        &__zoom {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            height: 40px;
+            width: 40px;
+            border-radius: 4px;
+            background: $grey;
+            color: #fff;
+            font-size: 28px;
+            text-align: center;
+            line-height: 40px;
+            margin: 20px 10px;
+            cursor: pointer;
+            display: block;
+            &:hover {
+                background: $black;
+            }
+        }
+    }
+    svg {
+        height: 100%;
+        min-height: 690px;
+        width: 100%;
+        max-height: 690px;
+    }
+    .floats {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        &__item {
+            display: inline-block;
+            vertical-align: bottom;
+            padding: 10px 20px;
+            background: $grey;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px 5px 0px 0;
+            color: #fff;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            &--active {
+                font-weight: 500;
+                background: $orange;
+                padding-top: 20px;
+            }
+            &--disable {
+                cursor: not-allowed;
+            }
+        }
+    }
+    .search {
+        position: absolute;
+        top: 0;
+        z-index: 200;
+        left: 0;
+        margin: 20px 0 0 20px;
+        outline: none;
+        &__icon {
+            position: absolute;
+            border-radius: 4px 0 0 4px;
+            height: 41px;
+            width: 40px;
+            top: 0;
+            left: 0;
+            background: $grey;
+            &--icon {
+                height: 41px;
+                width: 40px;
+                border-radius: 4px 0 0 4px;
+                background-size: 20px 20px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-image: url(src/image/interface.png);
+            }
+        }
+        &__clear {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 10px;
+            display: none;
+            &.active {
+                display: block;
+                color: #fff;
+                cursor: pointer;
+                .search__float {
+                    padding: 0 10px;
+                    vertical-align: initial;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .search {
+        .react-search {
+            margin-left: 40px;
+            &__input {
+                padding: 7px;
+                width: 315px;
+                border-radius: 0 4px 4px 0;
+                border: 1px solid #8D9AA3 !important;
+                outline: none;
+                box-shadow: none !important;
+            }
+            &__menu-items {
+                background: #fff;
+                margin: -1px 0px 0;
+                padding: 0px;
+                box-sizing: border-box;
+                overflow: hidden;
+                max-height: 274px;
+                z-index: 100;
+                border-radius: 0 0 4px 4px;
+                border: 1px solid $grey;
+                border-top: none;
+            }
+            &__menu--hidden {
+                display: none;
+            }
+            &__active {
+                border: 1px solid $orange;
+                background: $orange;
+                color: #fff;
+            }
+            &__menu-item {
+                padding: 10px 10px;
+                &:hover,
+                &.selected {
+                    background: $orange;
+                    cursor: pointer;
+                    a {
+                        color: #fff;
+                        &:nth-child(2) {
+                            color: #fff;
+                        }
+                    }
+                }
+                a:nth-child(2) {
+                    float: right;
+                    color: $grey;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .tooltip {
+        border-radius: 3px;
+        display: inline-block;
+        font-size: 13px;
+        left: -99em;
+        opacity: 0;
+        padding: 8px 21px;
+        position: absolute;
+        pointer-events: none;
+        transition: opacity 0.3s ease-out, margin-top 0.3s ease-out, margin-left 0.3s ease-out;
+        top: -99em;
+        visibility: visible;
+        z-index: 99;
+        background: rgba(255, 255, 255, 0.77);
+        box-sizing: border-box;
+        width: 150px;
+        padding: 5px;
+        &.true {
+            opacity: 1;
+            z-index: 2000;
+            box-shadow: 1px 6px 17px -6px rgba(0, 0, 0, 0.25);
+            // left: 20px !important;
+            // top: 80px !important;
+            visibility: visible;
+            &.false {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &__room {
+            background: $orange;
+            display: block;
+            margin: -5px -5px 0px;
+            padding: 5px;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        &__name {
+            display: block;
+            padding: 3px 0;
+        }
+        &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8px 4px 0 4px;
+            border-color: rgba(255, 255, 255, 0.77) transparent transparent transparent;
+            position: absolute;
+            bottom: -8px;
+            margin-left: -4px;
+            left: 50%;
+        }
+        &__top {
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 6px 0 6px 8px;
+                border-color: transparent transparent transparent rgba(255, 255, 255, 0.77);
+                position: absolute;
+                bottom: 80%;
+                margin-left: -4px;
+                right: -8px;
+                left: initial;
+            }
+        }
+        &__big {
+            width: 300px;
+            .tooltip__name {
+                display: inline-block;
+                padding: 3px 0;
+                width: 145px;
+            }
+        }
+        &__zone602 {
+            width: 450px;
+        }
+        &.multi-line {
+            display: block;
+            padding: 2px 0px;
+            text-align: center;
+        }
+    }
+    .no-preserve3d {
+        .controls {
+            display: none;
+        }
+        .true.tooltip {
+            left: 20px !important;
+            top: 80px !important;
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+svg {
+    opacity: 0;
+    /* make things invisible upon start */
+}
+
+svg.fade-in {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: .3s;
+    -moz-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        opacity: 1\9;
+        /* IE9 only */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#office__map.mini_map {
   &:after {
     content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 4px 0 4px;
-    border-color: rgba(255, 255, 255, 0.77) transparent transparent transparent;
-    position: absolute;
-    bottom: -8px;
-    margin-left: -4px;
-    left: 50%;
-  }
-  &__top {
-    &:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 6px 0 6px 8px;
-      border-color: transparent transparent transparent rgba(255, 255, 255, 0.77);
-      position: absolute;
-      bottom: 80%;
-      margin-left: -4px;
-      right: -8px;
-      left: initial;
-    }
-  }
-  &__big {
-    width: 300px;
-    .tooltip__name {
-      display: inline-block;
-      padding: 3px 0;
-      width: 145px;
-    }
-  }
-  &.multi-line {
     display: block;
-    padding: 2px 0px;
-    text-align: center;
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    padding: 159px 20px;
   }
-}
-
-.no-preserve3d  {
-  .controls {
-    display: none;
-  }
-  .true.tooltip {
-    left: 20px !important;
-    top: 80px !important;
+  &:hover {
     &:after {
+      cursor: pointer;
+    display: block;
+    content: "Перейти на интерактивную карту офиса";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.54);
+    color: #fff;
+    font-size: 35px;
+    box-sizing: border-box;
+    padding: 159px 20px;
+    text-align: center;
+    vertical-align: middle;
+    }
+  }
+    .search {
+        display: none;
+    }
+    .floats__item {
+        padding: 10px 10px;
+        margin: 0 3px;
+        font-size: 14px;
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    #map,
+    svg {
+        min-height: 400px;
+        max-height: 400px;
+    }
+    .controls {
       display: none;
     }
-  }
 }
-
-
-}
-
-
-
-
-
-
-
-svg {
-  opacity:0;  /* make things invisible upon start */
-}
-svg.fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:.3s;
-  -moz-animation-duration:.3s;
-  animation-duration:.3s;
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-
-@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }

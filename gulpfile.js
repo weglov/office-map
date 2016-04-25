@@ -40,10 +40,10 @@ var bundler = watchify(browserify({
   entries: ['./src/app.jsx'],
   transform: [reactify],
   extensions: ['.jsx'],
-  debug: true,
+  debug: false,
   cache: {},
   packageCache: {},
-  fullPaths: true
+  fullPaths: false
 }));
 
 function bundle() {
