@@ -22,7 +22,7 @@
     "react-dom": "^0.14.3",
     "react-redux": "^4.4.5",
     "react-router": "^2.0.1",
-    "react-search": "^1.0.9",
+    "react-search": "1.0.9",
     "reactify": "^1.1.0",
     "redux": "^3.4.0",
     "vinyl-source-stream": "^1.1.0",

@@ -59,6 +59,17 @@ gulp.task('build', function() {
   bundle()
 });
 
+gulp.task('browserify-production', function () {
+  var bundler = browserify('./main.js').transform(babelify, {/* options */ })
+
+  return bundler.bundle()
+    .on('error', map_error)
+    .pipe(source('app.js'))
+    .pipe(buffer())
+    .pipe(rename('app.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/dist'))
+})
 
 gulp.task('uglify', function() {
   gulp.src('main.js')
@@ -105,7 +116,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('prod', ['build-prod', 'sass']);
+gulp.task('prod', ['build', 'vendor', 'sass']);
 gulp.task('default', ['build', 'serve', 'sass', 'watch']);
 
 gulp.task('watch', function () {

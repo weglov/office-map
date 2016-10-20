@@ -11,8 +11,8 @@ module.exports = {
     width: '1440'
   },
   float4: {
-    img:'http://office.ren-tv.com/company/officemap/src/image/office4.png?2',
-    height: '600',
+    img:'http://office.ren-tv.com/company/officemap/src/image/office4.png?4',
+    height: '861',
     width: '1440'
   },
   float3: {

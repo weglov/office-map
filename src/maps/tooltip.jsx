@@ -113,11 +113,18 @@ module.exports = React.createClass({
         return <div className="tooltip__name"  key={elem.id}>{elem.name}</div>
       });
     }
-    return (
-      <div className={"tooltip " + active + many + ' tooltip__zone' + this.state.zone}>
-        <span className="tooltip__room">{zone}</span>
-        {_tooltip}
-      </div>
-    );
+    if (false) {
+      return (
+        <div className={"tooltip " + active + many + ' tooltip__zone' + this.state.zone}>
+          <span className="tooltip__room">{zone}</span>
+          {_tooltip}
+        </div>
+      ); 
+    } else {
+      return (
+        <div></div>
+        );
+    }
+    
   }
 });

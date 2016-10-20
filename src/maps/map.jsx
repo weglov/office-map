@@ -121,7 +121,7 @@ module.exports = React.createClass({
       <div id="map" ref="map" className="map">
         <Zoom />
         <Tooltip elem={this.state.elem} x={this.state.offsetX} y={this.state.offsetY}/>
-        <Search activeZone={this._activeZone}/>
+        {false ? <Search activeZone={this._activeZone}/> : ''}
         <svg onLoad={this._loaderMaps} viewBox={'0 0 ' + Config[float_size].width + ' ' + Config[float_size].height} className={this.state.active ? 'fade-in' : ''} >
           <g id="zoom" ref="zoom">
             <Float content={this.state.float}/>
